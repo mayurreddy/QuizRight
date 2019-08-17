@@ -13,6 +13,7 @@ import RxRelay
 
 class StageVM {
     /// private properties
+    let id: Int
     private let name: String
     private let description: String
     private let totalCount: Int
@@ -28,6 +29,7 @@ class StageVM {
     
     init(stage: Stageable) {
         var stage = stage
+        self.id = stage.id
         self.name = stage.name
         self.description = stage.description
         self.totalCount = stage.totalCount

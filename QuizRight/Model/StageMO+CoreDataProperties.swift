@@ -10,7 +10,6 @@
 import Foundation
 import CoreData
 
-
 extension StageMO {
 
     @nonobjc public class func createFetchRequest() -> NSFetchRequest<StageMO> {

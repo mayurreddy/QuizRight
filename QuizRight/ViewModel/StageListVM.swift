@@ -17,6 +17,9 @@ struct StageListVM {
     ]
     
     func getStage(for index: Int) -> Stageable {
+        if let pb = stageStore.getPersonalBestForStage(id: index+1) {
+            print("The personal best is \(pb) seconds")
+        }
         return allStages[index]
     }
     

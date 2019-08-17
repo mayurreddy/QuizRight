@@ -286,6 +286,7 @@ extension StageVC {
         let elapsedTime = viewModel.elapsedTime.value
         let message = "Well Done! You finished the stage in \(elapsedTime) seconds"
         resultLabel.text = message
+        stageStore.setStageElapsedTime(id: viewModel.id, time: elapsedTime)
     }
     
     private func presentFailureMessage() {
@@ -293,5 +294,6 @@ extension StageVC {
         resultLabel.isHidden = false
         let message = "Oops! You chose a wrong option. Better luck next time"
         resultLabel.text = message
+        stageStore.setStageFailure(id: viewModel.id)
     }
 }

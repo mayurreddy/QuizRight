@@ -9,20 +9,20 @@
 import Foundation
 
 protocol StageStorable {
-    func getStagesCompleted() -> [Int]
+    func getAllAttemptedStages(forceUpdate: Bool) -> [Int]
+    func getAllCompletedStages(forceUpdate: Bool) -> [Int]
     func getLastStageCompleted() -> Int?
-    func isStageCompleted(_: Int) -> Bool
-    func getPersonalBestForStage(_: Int) -> Double?
-    func getTotalAttemptsForStage(_: Int) -> Int
-    func getSuccessfulAttemptsForStage(_: Int) -> Int
-    func getAverageTimeForStage(_: Int) -> Double?
-    func getAllTimesForStage(_: Int) -> [Double]?
+    func isStageCompleted(id: Int) -> Bool
+    func getPersonalBestForStage(id: Int) -> Double?
+    func getTotalAttemptsForStage(id: Int) -> Int
+    func getSuccessfulAttemptsForStage(id: Int) -> Int
+    func getAverageTimeForStage(id: Int) -> Double?
+    func getAllTimesForStage(id: Int) -> [Double]?
     
-    func resetStage(_: Int)
+    func resetStage(id: Int)
     func resetAllStages()
     
-    func setStageTime(_: Int, _: Double)
-    func setStageSuccess(_: Int)
-    func setStageFailure(_: Int)
+    func setStageElapsedTime(id: Int, time: Double)
+    func setStageFailure(id: Int)
 }
 
