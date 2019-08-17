@@ -61,10 +61,6 @@ class LevelsListVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let stageMO = StageMO(context: dataController.container.viewContext)
-        stageMO.name = "Stage One"
-        stageMO.stageID = Int64(1)
-        dataController.saveContext()
     }
 }
 

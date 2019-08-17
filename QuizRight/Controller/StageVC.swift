@@ -113,10 +113,6 @@ class StageVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let request = StageMO.createFetchRequest()
-        let stages = try! dataController.context.fetch(request)
-        print("Received \(stages.count) stages")
 
         backButton.rx.tap.subscribe(onNext: {
             self.dismiss(animated: true)

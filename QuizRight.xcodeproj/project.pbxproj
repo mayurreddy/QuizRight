@@ -11,6 +11,7 @@
 		7727916B2305A3CF0035302E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727916A2305A3CF0035302E /* DataController.swift */; };
 		7727916E2305A6FD0035302E /* StageMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727916C2305A6FD0035302E /* StageMO+CoreDataClass.swift */; };
 		7727916F2305A6FD0035302E /* StageMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727916D2305A6FD0035302E /* StageMO+CoreDataProperties.swift */; };
+		772791732307F7030035302E /* StageStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772791722307F7030035302E /* StageStorable.swift */; };
 		774AD3E823059ED4005BA844 /* QuizRight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 774AD3E623059ED4005BA844 /* QuizRight.xcdatamodeld */; };
 		776DF7F8230149780054CB99 /* Stageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7F7230149780054CB99 /* Stageable.swift */; };
 		776DF7FB23014D300054CB99 /* StageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7FA23014D300054CB99 /* StageVC.swift */; };
@@ -55,6 +56,7 @@
 		7727916A2305A3CF0035302E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		7727916C2305A6FD0035302E /* StageMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StageMO+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7727916D2305A6FD0035302E /* StageMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StageMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		772791722307F7030035302E /* StageStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageStorable.swift; sourceTree = "<group>"; };
 		774AD3E723059ED4005BA844 /* QuizRight.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuizRight.xcdatamodel; sourceTree = "<group>"; };
 		776DF7F7230149780054CB99 /* Stageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stageable.swift; sourceTree = "<group>"; };
 		776DF7FA23014D300054CB99 /* StageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageVC.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				7727916A2305A3CF0035302E /* DataController.swift */,
 				7727916C2305A6FD0035302E /* StageMO+CoreDataClass.swift */,
 				7727916D2305A6FD0035302E /* StageMO+CoreDataProperties.swift */,
+				772791722307F7030035302E /* StageStorable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				776DF80E2302BA4A0054CB99 /* UIColorExtensions.swift in Sources */,
 				776DF7FB23014D300054CB99 /* StageVC.swift in Sources */,
 				776DF7FD230151270054CB99 /* LevelsListVC.swift in Sources */,
+				772791732307F7030035302E /* StageStorable.swift in Sources */,
 				7774BA8B22FC46C000A6DA87 /* ViewController.swift in Sources */,
 				7774BA8922FC46C000A6DA87 /* AppDelegate.swift in Sources */,
 				776DF80B2301B8AF0054CB99 /* StageThree.swift in Sources */,
