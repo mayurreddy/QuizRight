@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         levelsButton.setTitle("Levels", for: .normal)
         
         levelsButton.rx.tap.subscribe(onNext: {
-            let vc = LevelsListVC()
+            let vc = StageListVC()
             self.present(vc, animated: true)
         }).disposed(by: bag)
         

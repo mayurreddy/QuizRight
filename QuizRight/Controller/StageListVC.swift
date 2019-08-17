@@ -1,5 +1,5 @@
 //
-//  LevelsListVC.swift
+//  StageListVC.swift
 //  QuizRight
 //
 //  Created by Mayur on 8/12/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LevelsListVC: UIViewController {
+class StageListVC: UIViewController {
     
     private let viewModel = StageListVM()
     
@@ -62,9 +62,15 @@ class LevelsListVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        stageStore.refresh()
+        table.reloadData()
+    }
 }
 
-extension LevelsListVC: UITableViewDelegate {
+extension StageListVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
         let stage = viewModel.getStage(for: index)
@@ -74,7 +80,7 @@ extension LevelsListVC: UITableViewDelegate {
     }
 }
 
-extension LevelsListVC: UITableViewDataSource {
+extension StageListVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.getStageCount()
     }
@@ -85,6 +91,7 @@ extension LevelsListVC: UITableViewDataSource {
         let stage = viewModel.getStage(for: index)
         cell.textLabel?.text = stage.name
         cell.detailTextLabel?.text = stage.description
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
     
@@ -93,7 +100,7 @@ extension LevelsListVC: UITableViewDataSource {
     }
 }
 
-extension LevelsListVC {
+extension StageListVC {
     @objc func goBack(_ sender: Any?) {
         dismiss(animated: true)
     }

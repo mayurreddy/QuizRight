@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 
 class StageStoreManager: StageStorable {
     
@@ -45,7 +46,7 @@ class StageStoreManager: StageStorable {
     }
     
     func getPersonalBestForStage(id: Int) -> Double? {
-        guard let stage = getStageMO(id: id) else {
+        guard let stage = getStageMO(id: id), stage.isCompleted else {
             return nil
         }
         return stage.bestTime

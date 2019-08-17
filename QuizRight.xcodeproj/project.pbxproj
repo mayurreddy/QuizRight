@@ -16,7 +16,7 @@
 		774AD3E823059ED4005BA844 /* QuizRight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 774AD3E623059ED4005BA844 /* QuizRight.xcdatamodeld */; };
 		776DF7F8230149780054CB99 /* Stageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7F7230149780054CB99 /* Stageable.swift */; };
 		776DF7FB23014D300054CB99 /* StageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7FA23014D300054CB99 /* StageVC.swift */; };
-		776DF7FD230151270054CB99 /* LevelsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7FC230151270054CB99 /* LevelsListVC.swift */; };
+		776DF7FD230151270054CB99 /* StageListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7FC230151270054CB99 /* StageListVC.swift */; };
 		776DF800230168AC0054CB99 /* StageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7FF230168AC0054CB99 /* StageCell.swift */; };
 		776DF802230177200054CB99 /* StageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF801230177200054CB99 /* StageOne.swift */; };
 		776DF80523017A960054CB99 /* StageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF80423017A960054CB99 /* StageVM.swift */; };
@@ -62,7 +62,7 @@
 		774AD3E723059ED4005BA844 /* QuizRight.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuizRight.xcdatamodel; sourceTree = "<group>"; };
 		776DF7F7230149780054CB99 /* Stageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stageable.swift; sourceTree = "<group>"; };
 		776DF7FA23014D300054CB99 /* StageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageVC.swift; sourceTree = "<group>"; };
-		776DF7FC230151270054CB99 /* LevelsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsListVC.swift; sourceTree = "<group>"; };
+		776DF7FC230151270054CB99 /* StageListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageListVC.swift; sourceTree = "<group>"; };
 		776DF7FF230168AC0054CB99 /* StageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageCell.swift; sourceTree = "<group>"; };
 		776DF801230177200054CB99 /* StageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageOne.swift; sourceTree = "<group>"; };
 		776DF80423017A960054CB99 /* StageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageVM.swift; sourceTree = "<group>"; };
@@ -121,6 +121,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		772791772308416A0035302E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7727916A2305A3CF0035302E /* DataController.swift */,
+				7727916C2305A6FD0035302E /* StageMO+CoreDataClass.swift */,
+				7727916D2305A6FD0035302E /* StageMO+CoreDataProperties.swift */,
+				772791722307F7030035302E /* StageStorable.swift */,
+				772791742307FC7F0035302E /* StageStoreManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		776DF7F62301495E0054CB99 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,11 +141,6 @@
 				776DF8062301881F0054CB99 /* StageTwo.swift */,
 				776DF80A2301B8AF0054CB99 /* StageThree.swift */,
 				776DF80F230302850054CB99 /* StageFour.swift */,
-				7727916A2305A3CF0035302E /* DataController.swift */,
-				7727916C2305A6FD0035302E /* StageMO+CoreDataClass.swift */,
-				7727916D2305A6FD0035302E /* StageMO+CoreDataProperties.swift */,
-				772791722307F7030035302E /* StageStorable.swift */,
-				772791742307FC7F0035302E /* StageStoreManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				776DF7FA23014D300054CB99 /* StageVC.swift */,
-				776DF7FC230151270054CB99 /* LevelsListVC.swift */,
+				776DF7FC230151270054CB99 /* StageListVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,6 +204,7 @@
 		7774BA8722FC46C000A6DA87 /* QuizRight */ = {
 			isa = PBXGroup;
 			children = (
+				772791772308416A0035302E /* Data */,
 				776DF80C2302BA3A0054CB99 /* Extensions */,
 				776DF80323017A880054CB99 /* ViewModel */,
 				776DF7FE2301688E0054CB99 /* View */,
@@ -402,7 +410,7 @@
 				776DF7F8230149780054CB99 /* Stageable.swift in Sources */,
 				776DF80E2302BA4A0054CB99 /* UIColorExtensions.swift in Sources */,
 				776DF7FB23014D300054CB99 /* StageVC.swift in Sources */,
-				776DF7FD230151270054CB99 /* LevelsListVC.swift in Sources */,
+				776DF7FD230151270054CB99 /* StageListVC.swift in Sources */,
 				772791732307F7030035302E /* StageStorable.swift in Sources */,
 				7774BA8B22FC46C000A6DA87 /* ViewController.swift in Sources */,
 				7774BA8922FC46C000A6DA87 /* AppDelegate.swift in Sources */,
