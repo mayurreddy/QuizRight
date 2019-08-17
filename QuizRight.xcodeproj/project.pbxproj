@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3218E6310DB8C8A1327B0D9E /* libPods-QuizRight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD551C66DEC73B1C24246A8 /* libPods-QuizRight.a */; };
+		7727916B2305A3CF0035302E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727916A2305A3CF0035302E /* DataController.swift */; };
+		7727916E2305A6FD0035302E /* StageMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727916C2305A6FD0035302E /* StageMO+CoreDataClass.swift */; };
+		7727916F2305A6FD0035302E /* StageMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727916D2305A6FD0035302E /* StageMO+CoreDataProperties.swift */; };
+		774AD3E823059ED4005BA844 /* QuizRight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 774AD3E623059ED4005BA844 /* QuizRight.xcdatamodeld */; };
 		776DF7F8230149780054CB99 /* Stageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7F7230149780054CB99 /* Stageable.swift */; };
 		776DF7FB23014D300054CB99 /* StageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7FA23014D300054CB99 /* StageVC.swift */; };
 		776DF7FD230151270054CB99 /* LevelsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7FC230151270054CB99 /* LevelsListVC.swift */; };
@@ -48,6 +52,10 @@
 /* Begin PBXFileReference section */
 		0CD551C66DEC73B1C24246A8 /* libPods-QuizRight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuizRight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5F75E40EE8482EC53662B6 /* Pods-QuizRight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizRight.release.xcconfig"; path = "Target Support Files/Pods-QuizRight/Pods-QuizRight.release.xcconfig"; sourceTree = "<group>"; };
+		7727916A2305A3CF0035302E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		7727916C2305A6FD0035302E /* StageMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StageMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7727916D2305A6FD0035302E /* StageMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StageMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		774AD3E723059ED4005BA844 /* QuizRight.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuizRight.xcdatamodel; sourceTree = "<group>"; };
 		776DF7F7230149780054CB99 /* Stageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stageable.swift; sourceTree = "<group>"; };
 		776DF7FA23014D300054CB99 /* StageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageVC.swift; sourceTree = "<group>"; };
 		776DF7FC230151270054CB99 /* LevelsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsListVC.swift; sourceTree = "<group>"; };
@@ -117,6 +125,9 @@
 				776DF8062301881F0054CB99 /* StageTwo.swift */,
 				776DF80A2301B8AF0054CB99 /* StageThree.swift */,
 				776DF80F230302850054CB99 /* StageFour.swift */,
+				7727916A2305A3CF0035302E /* DataController.swift */,
+				7727916C2305A6FD0035302E /* StageMO+CoreDataClass.swift */,
+				7727916D2305A6FD0035302E /* StageMO+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,6 +202,7 @@
 				7774BA8F22FC46C200A6DA87 /* Assets.xcassets */,
 				7774BA9122FC46C200A6DA87 /* LaunchScreen.storyboard */,
 				7774BA9422FC46C200A6DA87 /* Info.plist */,
+				774AD3E623059ED4005BA844 /* QuizRight.xcdatamodeld */,
 			);
 			path = QuizRight;
 			sourceTree = "<group>";
@@ -388,6 +400,10 @@
 				7774BA8B22FC46C000A6DA87 /* ViewController.swift in Sources */,
 				7774BA8922FC46C000A6DA87 /* AppDelegate.swift in Sources */,
 				776DF80B2301B8AF0054CB99 /* StageThree.swift in Sources */,
+				7727916F2305A6FD0035302E /* StageMO+CoreDataProperties.swift in Sources */,
+				774AD3E823059ED4005BA844 /* QuizRight.xcdatamodeld in Sources */,
+				7727916E2305A6FD0035302E /* StageMO+CoreDataClass.swift in Sources */,
+				7727916B2305A3CF0035302E /* DataController.swift in Sources */,
 				776DF802230177200054CB99 /* StageOne.swift in Sources */,
 				776DF810230302850054CB99 /* StageFour.swift in Sources */,
 				776DF80523017A960054CB99 /* StageVM.swift in Sources */,
@@ -724,6 +740,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		774AD3E623059ED4005BA844 /* QuizRight.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				774AD3E723059ED4005BA844 /* QuizRight.xcdatamodel */,
+			);
+			currentVersion = 774AD3E723059ED4005BA844 /* QuizRight.xcdatamodel */;
+			path = QuizRight.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7774BA7D22FC46BF00A6DA87 /* Project object */;
 }
