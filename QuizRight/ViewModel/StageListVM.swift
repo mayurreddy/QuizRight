@@ -9,21 +9,12 @@
 import Foundation
 
 struct StageListVM {
-    private let allStages: [Stageable] = [
-        StageOne(),
-        StageTwo(),
-        StageThree(),
-        StageFour()
-    ]
     
     func getStage(for index: Int) -> Stageable {
-        if let pb = stageStore.getPersonalBestForStage(id: index+1) {
-            print("The personal best is \(pb) seconds")
-        }
-        return allStages[index]
+        return StageGenerator.getStage(index: index)
     }
     
     func getStageCount() -> Int {
-        return allStages.count
+        return StageGenerator.getStageCount()
     }
 }

@@ -53,6 +53,10 @@ class StageVM {
         return description
     }
     
+    func getPersonalBest() -> Double? {
+        return stageStore.getPersonalBestForStage(id: id)
+    }
+    
     func getTotalCount() -> Int {
         return totalCount
     }
@@ -90,6 +94,10 @@ class StageVM {
     
     func isStageComplete() -> Bool {
         return alreadyAnswered.count == correctCount
+    }
+    
+    func hasNextStage() -> Bool {
+        return StageGenerator.hasNextStage(index: id-1)
     }
     
     func startCounter() {

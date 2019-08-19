@@ -35,27 +35,42 @@ class StageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initializeViews()
+        bindToViewModel()
+        
         contentView.collectionView.delegate = self
         contentView.collectionView.dataSource = self
-        
-        contentView.stageNameLabel.text = viewModel.getStageName()
-        contentView.stageDescriptionLabel.text = viewModel.getStageDescription()
 
         contentView.backButton.rx.tap.subscribe(onNext: {
-            self.dismiss(animated: true)
+            self.dismiss(animated: false)
         }).disposed(by: bag)
         
         contentView.startButton.rx.tap.subscribe(onNext: {
+            self.contentView.collectionView.reloadData()
             self.contentView.startButton.isHidden = true
             self.contentView.stageNameLabel.isHidden = true
             self.contentView.collectionView.isHidden = false
             self.viewModel.startCounter()
         }).disposed(by: bag)
         
-        viewModel.elapsedTime.asObservable()
-            .map { $0 < 0.0 ? "--.-" : String($0) }
-            .bind(to: contentView.elapsedTimeLabel.rx.text)
-            .disposed(by: bag)
+        contentView.retryButton.rx.tap.subscribe(onNext: {
+            let stageId = self.viewModel.id
+            let stage = StageGenerator.getStage(index: stageId - 1)
+            self.viewModel = StageVM(stage: stage)
+            self.initializeViews()
+            self.bindToViewModel()
+        }).disposed(by: bag)
+        
+        contentView.nextButton.rx.tap.subscribe(onNext: {
+            guard let nextStage = StageGenerator.getNextStage(
+                index: self.viewModel.id-1
+            ) else {
+                return
+            }
+            self.viewModel = StageVM(stage: nextStage)
+            self.initializeViews()
+            self.bindToViewModel()
+        }).disposed(by: bag)
     }
     
     override func viewWillLayoutSubviews() {
@@ -120,12 +135,45 @@ extension StageVC: UICollectionViewDelegateFlowLayout {
 }
 
 extension StageVC {
+    private func initializeViews() {
+        contentView.collectionView.isHidden = true
+        contentView.resultLabel.isHidden = true
+        contentView.nextButtonStack.isHidden = true
+        contentView.startButton.isHidden = false
+        contentView.stageNameLabel.isHidden = false
+    }
+    
+    private func bindToViewModel() {
+        contentView.stageNameLabel.text = viewModel.getStageName()
+        contentView.stageDescriptionLabel.text = viewModel.getStageDescription()
+        contentView.nextButton.isHidden = !viewModel.hasNextStage()
+        
+        viewModel.elapsedTime.asObservable()
+            .map { $0 < 0.0 ? "--.-" : String($0) }
+            .bind(to: contentView.elapsedTimeLabel.rx.text)
+            .disposed(by: bag)
+        
+        let bestTimeText: String
+        if let best = viewModel.getPersonalBest() {
+            bestTimeText = "\(best)"
+        } else {
+            bestTimeText = "--.-"
+        }
+        contentView.bestTimeLabel.text = bestTimeText
+    }
+    
     private func presentSuccessMessage() {
         contentView.collectionView.isHidden = true
         contentView.resultLabel.isHidden = false
         contentView.nextButtonStack.isHidden = false
         let elapsedTime = viewModel.elapsedTime.value
-        let message = "Well Done! You finished the stage in \(elapsedTime) seconds"
+        let message: String
+        if let previousBest = viewModel.getPersonalBest(), previousBest > elapsedTime {
+            message = "Great Job! You set a new personal best time of \(elapsedTime) seconds"
+        } else {
+            message = "Well Done! You finished the stage in \(elapsedTime) seconds"
+        }
+
         contentView.resultLabel.text = message
         stageStore.setStageElapsedTime(id: viewModel.id, time: elapsedTime)
     }
