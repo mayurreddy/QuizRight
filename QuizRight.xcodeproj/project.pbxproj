@@ -17,6 +17,7 @@
 		7727917B230A93900035302E /* StageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727917A230A93900035302E /* StageGenerator.swift */; };
 		7727917D230ACCDD0035302E /* StageFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727917C230ACCDD0035302E /* StageFive.swift */; };
 		7727917F230ACE6B0035302E /* StageSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727917E230ACE6B0035302E /* StageSix.swift */; };
+		77279181230AE7F40035302E /* StageListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279180230AE7F40035302E /* StageListViewCell.swift */; };
 		774AD3E823059ED4005BA844 /* QuizRight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 774AD3E623059ED4005BA844 /* QuizRight.xcdatamodeld */; };
 		776DF7F8230149780054CB99 /* Stageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7F7230149780054CB99 /* Stageable.swift */; };
 		776DF7FB23014D300054CB99 /* StageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7FA23014D300054CB99 /* StageVC.swift */; };
@@ -67,6 +68,7 @@
 		7727917A230A93900035302E /* StageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageGenerator.swift; sourceTree = "<group>"; };
 		7727917C230ACCDD0035302E /* StageFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageFive.swift; sourceTree = "<group>"; };
 		7727917E230ACE6B0035302E /* StageSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageSix.swift; sourceTree = "<group>"; };
+		77279180230AE7F40035302E /* StageListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageListViewCell.swift; sourceTree = "<group>"; };
 		774AD3E723059ED4005BA844 /* QuizRight.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuizRight.xcdatamodel; sourceTree = "<group>"; };
 		776DF7F7230149780054CB99 /* Stageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stageable.swift; sourceTree = "<group>"; };
 		776DF7FA23014D300054CB99 /* StageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageVC.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				776DF7FF230168AC0054CB99 /* StageCell.swift */,
 				77279178230A7EE90035302E /* StageView.swift */,
+				77279180230AE7F40035302E /* StageListViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				7727916B2305A3CF0035302E /* DataController.swift in Sources */,
 				776DF802230177200054CB99 /* StageOne.swift in Sources */,
 				776DF810230302850054CB99 /* StageFour.swift in Sources */,
+				77279181230AE7F40035302E /* StageListViewCell.swift in Sources */,
 				776DF80523017A960054CB99 /* StageVM.swift in Sources */,
 				776DF8072301881F0054CB99 /* StageTwo.swift in Sources */,
 			);

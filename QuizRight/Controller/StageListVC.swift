@@ -14,22 +14,24 @@ class StageListVC: UIViewController {
     
     private lazy var table: UITableView = {
         let table = UITableView()
+        table.register(StageListViewCell.self, forCellReuseIdentifier: StageListViewCell.identifier)
         table.delegate = self
         table.dataSource = self
+        table.separatorStyle = .none
         return table
     }()
     
     private lazy var navBar: UINavigationBar = {
         let bar = UINavigationBar()
-        bar.barTintColor = .primaryOrange
+        bar.barTintColor = .white
         bar.isTranslucent = false
-        bar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        bar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         let navItem = UINavigationItem(title: "Levels")
         let backItem = UIBarButtonItem(title: "Back",
                                        style: .done,
                                        target: self,
                                        action: #selector(goBack(_:)))
-        backItem.tintColor = .white
+        backItem.tintColor = .black
         navItem.setLeftBarButton(backItem, animated: false)
         bar.setItems([navItem], animated: false)
         bar.snp.makeConstraints {
@@ -40,7 +42,7 @@ class StageListVC: UIViewController {
     
     override func loadView() {
         let view = UIView()
-        view.backgroundColor = .primaryOrange
+        view.backgroundColor = .white
         view.addSubview(navBar)
         view.addSubview(table)
         
@@ -78,6 +80,10 @@ extension StageListVC: UITableViewDelegate {
         let vc = StageVC(viewModel: stageVM)
         present(vc, animated: true)
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
 }
 
 extension StageListVC: UITableViewDataSource {
@@ -86,13 +92,25 @@ extension StageListVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "a")
+        
+        let cell = table.dequeueReusableCell(withIdentifier: StageListViewCell.identifier) as! StageListViewCell
         let index = indexPath.row
         let stage = viewModel.getStage(for: index)
-        cell.textLabel?.text = stage.name
-        cell.detailTextLabel?.text = stage.description
-        cell.accessoryType = .disclosureIndicator
+        cell.nameLabel.text = stage.name
+        cell.descLabel.text = stage.description
+        if let personalBest = stageStore.getPersonalBestForStage(id: stage.id) {
+            cell.bestLabel.text = "\(personalBest)"
+        }
         return cell
+        
+        
+//        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "a")
+//        let index = indexPath.row
+//        let stage = viewModel.getStage(for: index)
+//        cell.textLabel?.text = stage.name
+//        cell.detailTextLabel?.text = stage.description
+//        cell.accessoryType = .disclosureIndicator
+//        return cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
