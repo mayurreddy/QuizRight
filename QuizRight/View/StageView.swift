@@ -198,12 +198,6 @@ class StageView: UIView {
             $0.bottom.equalToSuperview().inset(70)
         }
         
-        stageNameLabel.snp.makeConstraints {
-            $0.top.equalTo(superview.safeAreaLayoutGuide.snp.top).inset(10)
-            $0.leading.trailing.equalToSuperview()
-            $0.height.equalTo(50)
-        }
-        
         resultLabel.snp.makeConstraints {
             $0.center.width.equalTo(collectionView)
         }
@@ -236,6 +230,12 @@ class StageView: UIView {
                 $0.centerX.equalToSuperview()
             }
             
+            stageNameLabel.snp.remakeConstraints {
+                $0.top.equalTo(superview.safeAreaLayoutGuide.snp.top).inset(25)
+                $0.leading.trailing.equalToSuperview()
+                $0.height.equalTo(50)
+            }
+            
             stageDescriptionLabel.snp.remakeConstraints {
                 $0.top.equalTo(stageNameLabel.snp.bottom)
                 $0.leading.trailing.equalToSuperview()
@@ -253,6 +253,12 @@ class StageView: UIView {
                 $0.center.equalToSuperview()
                 $0.width.equalTo(side)
                 $0.height.equalTo(side)
+            }
+            
+            stageNameLabel.snp.remakeConstraints {
+                $0.top.equalTo(superview.safeAreaLayoutGuide.snp.top).inset(10)
+                $0.leading.trailing.equalToSuperview()
+                $0.height.equalTo(50)
             }
             
             stageDescriptionLabel.snp.remakeConstraints {

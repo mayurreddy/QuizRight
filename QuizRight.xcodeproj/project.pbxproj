@@ -18,6 +18,10 @@
 		7727917D230ACCDD0035302E /* StageFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727917C230ACCDD0035302E /* StageFive.swift */; };
 		7727917F230ACE6B0035302E /* StageSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727917E230ACE6B0035302E /* StageSix.swift */; };
 		77279181230AE7F40035302E /* StageListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279180230AE7F40035302E /* StageListViewCell.swift */; };
+		77279183230BD0750035302E /* StageSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279182230BD0750035302E /* StageSeven.swift */; };
+		77279185230BD1050035302E /* StageEight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279184230BD1050035302E /* StageEight.swift */; };
+		77279187230BD2BE0035302E /* StageNine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279186230BD2BE0035302E /* StageNine.swift */; };
+		77279189230BD3C90035302E /* StageTen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279188230BD3C90035302E /* StageTen.swift */; };
 		774AD3E823059ED4005BA844 /* QuizRight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 774AD3E623059ED4005BA844 /* QuizRight.xcdatamodeld */; };
 		776DF7F8230149780054CB99 /* Stageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7F7230149780054CB99 /* Stageable.swift */; };
 		776DF7FB23014D300054CB99 /* StageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7FA23014D300054CB99 /* StageVC.swift */; };
@@ -69,6 +73,10 @@
 		7727917C230ACCDD0035302E /* StageFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageFive.swift; sourceTree = "<group>"; };
 		7727917E230ACE6B0035302E /* StageSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageSix.swift; sourceTree = "<group>"; };
 		77279180230AE7F40035302E /* StageListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageListViewCell.swift; sourceTree = "<group>"; };
+		77279182230BD0750035302E /* StageSeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageSeven.swift; sourceTree = "<group>"; };
+		77279184230BD1050035302E /* StageEight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageEight.swift; sourceTree = "<group>"; };
+		77279186230BD2BE0035302E /* StageNine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageNine.swift; sourceTree = "<group>"; };
+		77279188230BD3C90035302E /* StageTen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageTen.swift; sourceTree = "<group>"; };
 		774AD3E723059ED4005BA844 /* QuizRight.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuizRight.xcdatamodel; sourceTree = "<group>"; };
 		776DF7F7230149780054CB99 /* Stageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stageable.swift; sourceTree = "<group>"; };
 		776DF7FA23014D300054CB99 /* StageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageVC.swift; sourceTree = "<group>"; };
@@ -153,6 +161,10 @@
 				776DF80F230302850054CB99 /* StageFour.swift */,
 				7727917C230ACCDD0035302E /* StageFive.swift */,
 				7727917E230ACE6B0035302E /* StageSix.swift */,
+				77279182230BD0750035302E /* StageSeven.swift */,
+				77279184230BD1050035302E /* StageEight.swift */,
+				77279186230BD2BE0035302E /* StageNine.swift */,
+				77279188230BD3C90035302E /* StageTen.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -422,22 +434,26 @@
 			files = (
 				7727917B230A93900035302E /* StageGenerator.swift in Sources */,
 				776DF800230168AC0054CB99 /* StageCell.swift in Sources */,
+				77279185230BD1050035302E /* StageEight.swift in Sources */,
 				776DF80923018C430054CB99 /* StageListVM.swift in Sources */,
 				7727917F230ACE6B0035302E /* StageSix.swift in Sources */,
 				776DF7F8230149780054CB99 /* Stageable.swift in Sources */,
 				776DF80E2302BA4A0054CB99 /* UIColorExtensions.swift in Sources */,
 				776DF7FB23014D300054CB99 /* StageVC.swift in Sources */,
+				77279189230BD3C90035302E /* StageTen.swift in Sources */,
 				77279179230A7EE90035302E /* StageView.swift in Sources */,
 				776DF7FD230151270054CB99 /* StageListVC.swift in Sources */,
 				772791732307F7030035302E /* StageStorable.swift in Sources */,
 				7774BA8B22FC46C000A6DA87 /* ViewController.swift in Sources */,
 				7727917D230ACCDD0035302E /* StageFive.swift in Sources */,
 				7774BA8922FC46C000A6DA87 /* AppDelegate.swift in Sources */,
+				77279187230BD2BE0035302E /* StageNine.swift in Sources */,
 				776DF80B2301B8AF0054CB99 /* StageThree.swift in Sources */,
 				7727916F2305A6FD0035302E /* StageMO+CoreDataProperties.swift in Sources */,
 				772791752307FC7F0035302E /* StageStoreManager.swift in Sources */,
 				774AD3E823059ED4005BA844 /* QuizRight.xcdatamodeld in Sources */,
 				7727916E2305A6FD0035302E /* StageMO+CoreDataClass.swift in Sources */,
+				77279183230BD0750035302E /* StageSeven.swift in Sources */,
 				7727916B2305A3CF0035302E /* DataController.swift in Sources */,
 				776DF802230177200054CB99 /* StageOne.swift in Sources */,
 				776DF810230302850054CB99 /* StageFour.swift in Sources */,

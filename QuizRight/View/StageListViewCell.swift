@@ -25,36 +25,42 @@ class StageListViewCell: UITableViewCell {
     let descLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 3
+        label.sizeToFit()
         label.font = UIFont.systemFont(ofSize: 18, weight: .regular)
         return label
     }()
     
     let bestLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 32, weight: .semibold)
+        label.font = UIFont.systemFont(ofSize: 28, weight: .semibold)
+        label.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         return label
     }()
+//
+//    private lazy var nameStack: UIStackView = {
+//        let stack = UIStackView()
+//        stack.axis = .vertical
+//        stack.alignment = .leading
+//        stack.addArrangedSubview(nameLabel)
+//        stack.addArrangedSubview(descLabel)
+//        return stack
+//    }()
     
-    private lazy var nameStack: UIStackView = {
-        let stack = UIStackView()
-        stack.axis = .vertical
-        stack.alignment = .leading
-        stack.addArrangedSubview(nameLabel)
-        stack.addArrangedSubview(descLabel)
-        return stack
-    }()
-    
-    private lazy var superStack: UIStackView = {
-        let stack = UIStackView()
-        stack.axis = .horizontal
-        stack.alignment = .center
-        stack.addArrangedSubview(nameStack)
-        stack.addArrangedSubview(bestLabel)
+    private lazy var superStack: UIView = {
+        let stack = UIView()
+        stack.addSubview(nameLabel)
+        stack.addSubview(descLabel)
+        stack.addSubview(bestLabel)
         bestLabel.snp.makeConstraints {
             $0.trailing.equalToSuperview()
+            $0.centerY.equalToSuperview()
         }
-        nameStack.snp.makeConstraints {
-            $0.top.bottom.equalToSuperview()
+        nameLabel.snp.makeConstraints {
+            $0.top.leading.equalToSuperview()
+        }
+        descLabel.snp.makeConstraints {
+            $0.leading.equalToSuperview()
+            $0.top.equalTo(nameLabel.snp.bottom)
         }
         return stack
     }()
@@ -74,22 +80,26 @@ class StageListViewCell: UITableViewCell {
         }
         
         addSubview(bgView)
-        bgView.snp.makeConstraints { $0.edges.equalToSuperview().inset(10) }
+        bgView.snp.makeConstraints {
+            $0.top.leading.trailing.equalToSuperview().inset(10)
+            $0.bottom.equalToSuperview()
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    override func prepareForReuse() {
+        nameLabel.text = ""
+        descLabel.text = ""
+        bestLabel.text = ""
     }
 
 }

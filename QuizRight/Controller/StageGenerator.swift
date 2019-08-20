@@ -15,7 +15,11 @@ struct StageGenerator {
         StageThree(),
         StageFour(),
         StageFive(),
-        StageSix()
+        StageSix(),
+        StageSeven(),
+        StageEight(),
+        StageNine(),
+        StageTen()
     ]
     
     static func getStage(index: Int) -> Stageable {

@@ -51,12 +51,17 @@ class StageListVC: UIViewController {
             $0.leading.trailing.equalToSuperview()
         }
         
-        table.snp.makeConstraints {
-            $0.top.equalTo(navBar.snp.bottom)
-            $0.leading.trailing.bottom.equalToSuperview()
-        }
-        
         self.view = view
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        table.snp.remakeConstraints {
+            $0.top.equalTo(navBar.snp.bottom)
+            $0.leading.equalTo(view.safeAreaLayoutGuide.snp.leading)
+            $0.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing)
+            $0.bottom.equalToSuperview()
+        }
     }
 
     override func viewDidLoad() {
@@ -82,7 +87,7 @@ extension StageListVC: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        return 110
     }
 }
 
@@ -99,18 +104,9 @@ extension StageListVC: UITableViewDataSource {
         cell.nameLabel.text = stage.name
         cell.descLabel.text = stage.description
         if let personalBest = stageStore.getPersonalBestForStage(id: stage.id) {
-            cell.bestLabel.text = "\(personalBest)"
+            cell.bestLabel.text = "\(personalBest)s"
         }
         return cell
-        
-        
-//        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "a")
-//        let index = indexPath.row
-//        let stage = viewModel.getStage(for: index)
-//        cell.textLabel?.text = stage.name
-//        cell.detailTextLabel?.text = stage.description
-//        cell.accessoryType = .disclosureIndicator
-//        return cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
