@@ -10,7 +10,7 @@ import Foundation
 
 struct StageEight: Stageable {
     let id = 8
-    let name = "Multiples of 4"
+    let name = "Multiples of 4 - II"
     let description = "Select all multiples of 4"
     let totalCount = 25
     let correctCount = 5
@@ -22,9 +22,6 @@ struct StageEight: Stageable {
     
     lazy var wrongAnswers: [Int] = {
         let shuffled = (25...248).shuffled()
-        return Array(shuffled.prefix(through: 19).map {
-            let rand = Int.random(in: 1...3)
-            return $0 * 4 + rand
-        })
+        return Array(shuffled.prefix(through: 19).map { $0 * 4 + 2 })
     }()
 }

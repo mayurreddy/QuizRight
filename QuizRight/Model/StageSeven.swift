@@ -22,9 +22,6 @@ struct StageSeven: Stageable {
     
     lazy var wrongAnswers: [Int] = {
         let shuffled = (1...24).shuffled()
-        return Array(shuffled.prefix(through: 5).map {
-            let rand = Int.random(in: 1...3)
-            return $0 * 4 + rand
-        })
+        return Array(shuffled.prefix(through: 5).map { $0 * 4 + 2 })
     }()
 }
