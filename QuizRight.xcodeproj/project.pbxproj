@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3218E6310DB8C8A1327B0D9E /* libPods-QuizRight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD551C66DEC73B1C24246A8 /* libPods-QuizRight.a */; };
+		7701AF96230E844C00A20F88 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7701AF95230E844C00A20F88 /* GameKit.framework */; };
 		7727916B2305A3CF0035302E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727916A2305A3CF0035302E /* DataController.swift */; };
 		7727916E2305A6FD0035302E /* StageMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727916C2305A6FD0035302E /* StageMO+CoreDataClass.swift */; };
 		7727916F2305A6FD0035302E /* StageMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727916D2305A6FD0035302E /* StageMO+CoreDataProperties.swift */; };
@@ -63,6 +64,8 @@
 /* Begin PBXFileReference section */
 		0CD551C66DEC73B1C24246A8 /* libPods-QuizRight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuizRight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5F75E40EE8482EC53662B6 /* Pods-QuizRight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizRight.release.xcconfig"; path = "Target Support Files/Pods-QuizRight/Pods-QuizRight.release.xcconfig"; sourceTree = "<group>"; };
+		7701AF92230E81E700A20F88 /* QuizRight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuizRight.entitlements; sourceTree = "<group>"; };
+		7701AF95230E844C00A20F88 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		7727916A2305A3CF0035302E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		7727916C2305A6FD0035302E /* StageMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StageMO+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7727916D2305A6FD0035302E /* StageMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StageMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3218E6310DB8C8A1327B0D9E /* libPods-QuizRight.a in Frameworks */,
+				7701AF96230E844C00A20F88 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +138,7 @@
 		40FA1F3517E9F3B5C372480E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7701AF95230E844C00A20F88 /* GameKit.framework */,
 				0CD551C66DEC73B1C24246A8 /* libPods-QuizRight.a */,
 			);
 			name = Frameworks;
@@ -148,13 +153,13 @@
 				772791722307F7030035302E /* StageStorable.swift */,
 				772791742307FC7F0035302E /* StageStoreManager.swift */,
 			);
-			path = Data;
+			name = Data;
+			path = ../Data;
 			sourceTree = "<group>";
 		};
-		776DF7F62301495E0054CB99 /* Model */ = {
+		7727918A230E7C660035302E /* Stages */ = {
 			isa = PBXGroup;
 			children = (
-				776DF7F7230149780054CB99 /* Stageable.swift */,
 				776DF801230177200054CB99 /* StageOne.swift */,
 				776DF8062301881F0054CB99 /* StageTwo.swift */,
 				776DF80A2301B8AF0054CB99 /* StageThree.swift */,
@@ -165,6 +170,16 @@
 				77279184230BD1050035302E /* StageEight.swift */,
 				77279186230BD2BE0035302E /* StageNine.swift */,
 				77279188230BD3C90035302E /* StageTen.swift */,
+			);
+			path = Stages;
+			sourceTree = "<group>";
+		};
+		776DF7F62301495E0054CB99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				772791772308416A0035302E /* Data */,
+				7727918A230E7C660035302E /* Stages */,
+				776DF7F7230149780054CB99 /* Stageable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -231,7 +246,7 @@
 		7774BA8722FC46C000A6DA87 /* QuizRight */ = {
 			isa = PBXGroup;
 			children = (
-				772791772308416A0035302E /* Data */,
+				7701AF92230E81E700A20F88 /* QuizRight.entitlements */,
 				776DF80C2302BA3A0054CB99 /* Extensions */,
 				776DF80323017A880054CB99 /* ViewModel */,
 				776DF7FE2301688E0054CB99 /* View */,
@@ -344,6 +359,14 @@
 				TargetAttributes = {
 					7774BA8422FC46C000A6DA87 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.GameCenter.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					7774BA9822FC46C200A6DA87 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -635,6 +658,7 @@
 			baseConfigurationReference = E7717CA7688AE0F6E238B1DA /* Pods-QuizRight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuizRight/QuizRight.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69T99HQWYH;
@@ -644,7 +668,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mayur.QuizRight;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayurreddy.QuizRight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -657,6 +681,7 @@
 			baseConfigurationReference = 6F5F75E40EE8482EC53662B6 /* Pods-QuizRight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuizRight/QuizRight.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69T99HQWYH;
@@ -666,7 +691,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mayur.QuizRight;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayurreddy.QuizRight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
