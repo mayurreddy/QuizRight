@@ -14,9 +14,31 @@ import RxCocoa
 class ViewController: UIViewController {
     
     private let bag = DisposeBag()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    private let viewModel = HomeScreenVM()
+    
+    private lazy var loginToGCButton: UIButton = {
+        let button = UIButton(type: .roundedRect)
+        button.setTitle("Login to Game Center", for: .normal)
+        button.setTitleColor(.primaryOrange, for: .normal)
+        
+        viewModel.isGKPlayerAuthenticated.asObservable()
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { isAuthenticated in
+                button.isHidden = isAuthenticated
+            })
+            .disposed(by: bag)
+        
+        button.rx.tap.subscribe(onNext: {
+            self.viewModel.attemptAuthentication()
+        })
+        .disposed(by: bag)
+        
+        return button
+    }()
+    
+    override func loadView() {
+        let view = UIView()
+        view.backgroundColor = .white
         
         let stack = UIStackView()
         stack.axis = .vertical
@@ -48,10 +70,37 @@ class ViewController: UIViewController {
         stack.addArrangedSubview(recordsButton)
         
         view.addSubview(stack)
+        view.addSubview(loginToGCButton)
         
         stack.snp.makeConstraints {
             $0.center.equalToSuperview()
         }
+        
+        loginToGCButton.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalToSuperview().inset(40)
+        }
+        
+        self.view = view
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        viewModel.loginToGameCenterVC.asObservable()
+            .subscribe(onNext: { vc, err in
+                if let vc = vc {
+                    self.present(vc, animated: true)
+                } else if let error = err {
+                    // TODO
+                }
+            })
+            .disposed(by: bag)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.checkAuthentication()
     }
     
     private func createButton() -> UIButton {
@@ -59,8 +108,8 @@ class ViewController: UIViewController {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 26, weight: .semibold)
         button.backgroundColor = .primaryOrange
         button.snp.makeConstraints {
-            $0.width.equalTo(300)
-            $0.height.equalTo(80)
+            $0.width.equalTo(280)
+            $0.height.equalTo(70)
         }
         button.layer.cornerRadius = 10
         return button
