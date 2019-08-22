@@ -38,6 +38,10 @@ class StageStoreManager: StageStorable {
         return nil
     }
     
+    func isStageAttempted(id: Int) -> Bool {
+        return allAttemptedStages.contains { Int($0.stageID) == id }
+    }
+    
     func isStageCompleted(id: Int) -> Bool {
         guard let stage = getStageMO(id: id) else {
             return false
@@ -132,7 +136,7 @@ class StageStoreManager: StageStorable {
 }
 
 extension StageStoreManager {
-    private func getStageMO(id: Int) -> StageMO? {
+    func getStageMO(id: Int) -> StageMO? {
         return allAttemptedStages.first { $0.stageID == id }
     }
     

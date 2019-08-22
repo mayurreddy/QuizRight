@@ -9,7 +9,7 @@
 import Foundation
 
 struct StageGenerator {
-    private static let allStages: [Stageable] = [
+    static let allStages: [Stageable] = [
         StageOne(),
         StageTwo(),
         StageThree(),

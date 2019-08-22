@@ -10,6 +10,11 @@
 		3218E6310DB8C8A1327B0D9E /* libPods-QuizRight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD551C66DEC73B1C24246A8 /* libPods-QuizRight.a */; };
 		7701AF96230E844C00A20F88 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7701AF95230E844C00A20F88 /* GameKit.framework */; };
 		7701AF98230ED50E00A20F88 /* HomeScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AF97230ED50E00A20F88 /* HomeScreenVM.swift */; };
+		7701AF9A230EE9F300A20F88 /* LocalRecordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AF99230EE9F300A20F88 /* LocalRecordsVC.swift */; };
+		7701AF9C230EEA2600A20F88 /* LocalRecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AF9B230EEA2600A20F88 /* LocalRecordsView.swift */; };
+		7701AF9E230EEA4400A20F88 /* LocalRecordsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AF9D230EEA4400A20F88 /* LocalRecordsVM.swift */; };
+		7701AFA0230EEC9400A20F88 /* LocalRecordsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AF9F230EEC9400A20F88 /* LocalRecordsViewCell.swift */; };
+		7701AFA2230EF60400A20F88 /* StageRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AFA1230EF60400A20F88 /* StageRecord.swift */; };
 		7727916B2305A3CF0035302E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727916A2305A3CF0035302E /* DataController.swift */; };
 		7727916E2305A6FD0035302E /* StageMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727916C2305A6FD0035302E /* StageMO+CoreDataClass.swift */; };
 		7727916F2305A6FD0035302E /* StageMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727916D2305A6FD0035302E /* StageMO+CoreDataProperties.swift */; };
@@ -68,6 +73,11 @@
 		7701AF92230E81E700A20F88 /* QuizRight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuizRight.entitlements; sourceTree = "<group>"; };
 		7701AF95230E844C00A20F88 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		7701AF97230ED50E00A20F88 /* HomeScreenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVM.swift; sourceTree = "<group>"; };
+		7701AF99230EE9F300A20F88 /* LocalRecordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRecordsVC.swift; sourceTree = "<group>"; };
+		7701AF9B230EEA2600A20F88 /* LocalRecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRecordsView.swift; sourceTree = "<group>"; };
+		7701AF9D230EEA4400A20F88 /* LocalRecordsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRecordsVM.swift; sourceTree = "<group>"; };
+		7701AF9F230EEC9400A20F88 /* LocalRecordsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRecordsViewCell.swift; sourceTree = "<group>"; };
+		7701AFA1230EF60400A20F88 /* StageRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageRecord.swift; sourceTree = "<group>"; };
 		7727916A2305A3CF0035302E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		7727916C2305A6FD0035302E /* StageMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StageMO+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7727916D2305A6FD0035302E /* StageMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StageMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -182,6 +192,7 @@
 				772791772308416A0035302E /* Data */,
 				7727918A230E7C660035302E /* Stages */,
 				776DF7F7230149780054CB99 /* Stageable.swift */,
+				7701AFA1230EF60400A20F88 /* StageRecord.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +204,7 @@
 				776DF7FC230151270054CB99 /* StageListVC.swift */,
 				7727917A230A93900035302E /* StageGenerator.swift */,
 				7774BA8A22FC46C000A6DA87 /* ViewController.swift */,
+				7701AF99230EE9F300A20F88 /* LocalRecordsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -203,6 +215,8 @@
 				776DF7FF230168AC0054CB99 /* StageCell.swift */,
 				77279178230A7EE90035302E /* StageView.swift */,
 				77279180230AE7F40035302E /* StageListViewCell.swift */,
+				7701AF9B230EEA2600A20F88 /* LocalRecordsView.swift */,
+				7701AF9F230EEC9400A20F88 /* LocalRecordsViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +227,7 @@
 				776DF80423017A960054CB99 /* StageVM.swift */,
 				776DF80823018C430054CB99 /* StageListVM.swift */,
 				7701AF97230ED50E00A20F88 /* HomeScreenVM.swift */,
+				7701AF9D230EEA4400A20F88 /* LocalRecordsVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -464,13 +479,16 @@
 				776DF80923018C430054CB99 /* StageListVM.swift in Sources */,
 				7727917F230ACE6B0035302E /* StageSix.swift in Sources */,
 				776DF7F8230149780054CB99 /* Stageable.swift in Sources */,
+				7701AF9C230EEA2600A20F88 /* LocalRecordsView.swift in Sources */,
 				776DF80E2302BA4A0054CB99 /* UIColorExtensions.swift in Sources */,
+				7701AF9A230EE9F300A20F88 /* LocalRecordsVC.swift in Sources */,
 				776DF7FB23014D300054CB99 /* StageVC.swift in Sources */,
 				77279189230BD3C90035302E /* StageTen.swift in Sources */,
 				77279179230A7EE90035302E /* StageView.swift in Sources */,
 				776DF7FD230151270054CB99 /* StageListVC.swift in Sources */,
 				772791732307F7030035302E /* StageStorable.swift in Sources */,
 				7774BA8B22FC46C000A6DA87 /* ViewController.swift in Sources */,
+				7701AF9E230EEA4400A20F88 /* LocalRecordsVM.swift in Sources */,
 				7727917D230ACCDD0035302E /* StageFive.swift in Sources */,
 				7774BA8922FC46C000A6DA87 /* AppDelegate.swift in Sources */,
 				77279187230BD2BE0035302E /* StageNine.swift in Sources */,
@@ -478,6 +496,7 @@
 				776DF80B2301B8AF0054CB99 /* StageThree.swift in Sources */,
 				7727916F2305A6FD0035302E /* StageMO+CoreDataProperties.swift in Sources */,
 				772791752307FC7F0035302E /* StageStoreManager.swift in Sources */,
+				7701AFA2230EF60400A20F88 /* StageRecord.swift in Sources */,
 				774AD3E823059ED4005BA844 /* QuizRight.xcdatamodeld in Sources */,
 				7727916E2305A6FD0035302E /* StageMO+CoreDataClass.swift in Sources */,
 				77279183230BD0750035302E /* StageSeven.swift in Sources */,
@@ -485,6 +504,7 @@
 				776DF802230177200054CB99 /* StageOne.swift in Sources */,
 				776DF810230302850054CB99 /* StageFour.swift in Sources */,
 				77279181230AE7F40035302E /* StageListViewCell.swift in Sources */,
+				7701AFA0230EEC9400A20F88 /* LocalRecordsViewCell.swift in Sources */,
 				776DF80523017A960054CB99 /* StageVM.swift in Sources */,
 				776DF8072301881F0054CB99 /* StageTwo.swift in Sources */,
 			);

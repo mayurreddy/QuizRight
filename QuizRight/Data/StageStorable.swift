@@ -12,6 +12,7 @@ protocol StageStorable {
     func getAllAttemptedStages(forceUpdate: Bool) -> [Int]
     func getAllCompletedStages(forceUpdate: Bool) -> [Int]
     func getLastStageCompleted() -> Int?
+    func isStageAttempted(id: Int) -> Bool
     func isStageCompleted(id: Int) -> Bool
     func getPersonalBestForStage(id: Int) -> Double?
     func getTotalAttemptsForStage(id: Int) -> Int

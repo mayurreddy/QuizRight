@@ -45,6 +45,11 @@ class ViewController: UIViewController {
         let recordsButton = createButton()
         recordsButton.setTitle("Records", for: .normal)
         
+        recordsButton.rx.tap.subscribe(onNext: {
+            let vc = LocalRecordsVC()
+            self.present(vc, animated: true)
+        }).disposed(by: bag)
+        
         stack.addArrangedSubview(levelsButton)
         stack.addArrangedSubview(continueButton)
         stack.addArrangedSubview(recordsButton)
