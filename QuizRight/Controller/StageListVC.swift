@@ -25,13 +25,13 @@ class StageListVC: UIViewController {
         let bar = UINavigationBar()
         bar.barTintColor = .white
         bar.isTranslucent = false
-        bar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        bar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.fontBlack]
         let navItem = UINavigationItem(title: "Levels")
         let backItem = UIBarButtonItem(title: "Back",
                                        style: .done,
                                        target: self,
                                        action: #selector(goBack(_:)))
-        backItem.tintColor = .black
+        backItem.tintColor = .fontBlack
         navItem.setLeftBarButton(backItem, animated: false)
         bar.setItems([navItem], animated: false)
         bar.snp.makeConstraints {

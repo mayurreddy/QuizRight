@@ -28,9 +28,13 @@ extension UIColor {
 }
 
 extension UIColor {
-    static let primaryOrange = UIColor(rgb: 0xFF4C34) // UIColor(rgb: 0xF25C33)
+    static let primaryOrange = UIColor(rgb: 0xE74C3C) // UIColor(rgb: 0xF25C33)
     static let primaryBlack = UIColor(rgb: 0x3A3F47)
     static let primaryGreen = UIColor(rgb: 0x28AD6D)
     
     static let lightOrange = UIColor(rgb: 0xFCB69F)
+    static let fontWhite = UIColor(rgb: 0xF0F3F4)
+    static let fontBlack = UIColor(rgb: 0x2C3E50)
+    static let fontGray = UIColor(rgb: 0x5D6D7E)
+    static let fontGrayLight = UIColor(rgb: 0xCACfD2)
 }

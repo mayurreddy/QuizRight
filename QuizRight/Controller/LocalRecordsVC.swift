@@ -51,7 +51,16 @@ class LocalRecordsVC: UIViewController {
     private func configure(_ cell: LocalRecordsViewCell, from record: StageRecord) {
         cell.attemptsLabel.text = "\(record.totalAttempts)"
         cell.bestLabel.text = record.personalBest == nil ? "--.-" : "\(record.personalBest!)s"
-        cell.averageTimeLabel.text = record.averageSuccessTime == nil ? "--.-" : "\(record.averageSuccessTime!)s"
+        
+        let averageSuccessTime: String
+        if var averageTime = record.averageSuccessTime {
+            averageTime = Double(round(averageTime * 100) / 100)
+            averageSuccessTime = "\(averageTime)s"
+        } else {
+            averageSuccessTime = "--.-"
+        }
+        cell.averageTimeLabel.text = averageSuccessTime
+        
         var successRate = record.successRate
         successRate = Double(round(successRate * 1000) / 10)
         cell.successRateLabel.text = "\(successRate)%"
@@ -66,6 +75,6 @@ class LocalRecordsVC: UIViewController {
 
 extension LocalRecordsVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 240
+        return 200
     }
 }

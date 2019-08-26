@@ -12,13 +12,14 @@ class StageListViewCell: UITableViewCell {
     
     static let identifier = "StageListViewCell"
     
-    let nameLabel: UILabel = {
+    lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
-        label.font = UIFont.systemFont(ofSize: 26, weight: .semibold)
+        label.font = UIFont.systemFont(ofSize: 26, weight: .regular)
         label.snp.makeConstraints {
             $0.height.equalTo(40)
         }
+        label.textColor = .fontWhite
         return label
     }()
     
@@ -27,24 +28,17 @@ class StageListViewCell: UITableViewCell {
         label.numberOfLines = 3
         label.sizeToFit()
         label.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        label.textColor = .fontWhite
         return label
     }()
     
     let bestLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 28, weight: .semibold)
+        label.font = UIFont.systemFont(ofSize: 28, weight: .regular)
         label.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
+        label.textColor = .fontWhite
         return label
     }()
-//
-//    private lazy var nameStack: UIStackView = {
-//        let stack = UIStackView()
-//        stack.axis = .vertical
-//        stack.alignment = .leading
-//        stack.addArrangedSubview(nameLabel)
-//        stack.addArrangedSubview(descLabel)
-//        return stack
-//    }()
     
     private lazy var superStack: UIView = {
         let stack = UIView()
@@ -71,7 +65,7 @@ class StageListViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none
 
-        bgView.backgroundColor = .lightOrange
+        bgView.backgroundColor = .primaryOrange
         bgView.layer.cornerRadius = 10
         bgView.addSubview(superStack)
         superStack.snp.makeConstraints {

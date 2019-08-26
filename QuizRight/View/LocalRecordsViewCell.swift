@@ -12,20 +12,35 @@ class LocalRecordsViewCell: UITableViewCell {
     
     static let identifier = "LocalRecordsViewCell"
     
-    private let fontColor = UIColor.white
+    private lazy var header: UIView = {
+        let view = UIView()
+        view.addSubview(nameLabel)
+        view.addSubview(resetButton)
+        nameLabel.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(8)
+            $0.leading.equalToSuperview().inset(15)
+        }
+        resetButton.snp.makeConstraints {
+            $0.trailing.equalToSuperview().inset(20)
+            $0.centerY.equalToSuperview()
+        }
+        view.snp.makeConstraints {
+            $0.height.equalTo(40)
+        }
+        return view
+    }()
     
     lazy var nameLabel: UILabel = {
         let label = UILabel()
-        label.setContentHuggingPriority(.defaultHigh, for: .vertical)
-        label.font = UIFont.systemFont(ofSize: 24, weight: .regular)
-        label.textColor = fontColor
+        label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        label.textColor = .fontBlack
         return label
     }()
     
     lazy var resetButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Reset", for: .normal)
-        button.setTitleColor(fontColor, for: .normal)
+        button.setTitleColor(.fontBlack, for: .normal)
         return button
     }()
     
@@ -38,8 +53,8 @@ class LocalRecordsViewCell: UITableViewCell {
     private lazy var notAttemptedLabel: UILabel = {
         let label = UILabel()
         label.text = "No records found"
-        label.font = UIFont.systemFont(ofSize: 28, weight: .regular)
-        label.textColor = fontColor
+        label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        label.textColor = .fontGrayLight
         return label
     }()
     
@@ -50,25 +65,34 @@ class LocalRecordsViewCell: UITableViewCell {
                                   gradientEndColor: UIColor(rgb: 0x3A6073))
         bgView.layer.cornerRadius = 10
         
+        addSubview(header)
         addSubview(bgView)
+        
+        header.snp.makeConstraints {
+            $0.top.equalToSuperview()
+            $0.leading.trailing.equalToSuperview()
+            $0.height.equalTo(40)
+        }
+        
         bgView.snp.makeConstraints {
-            $0.top.leading.trailing.equalToSuperview().inset(10)
+            $0.leading.trailing.equalToSuperview().inset(10)
+            $0.top.equalTo(header.snp.bottom)
             $0.bottom.equalToSuperview()
         }
         
-        bgView.addSubview(nameLabel)
-        bgView.addSubview(resetButton)
+//        bgView.addSubview(nameLabel)
+//        bgView.addSubview(resetButton)
         bgView.addSubview(notAttemptedLabel)
         
-        nameLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(6)
-            $0.centerX.equalToSuperview()
-        }
-        
-        resetButton.snp.makeConstraints {
-            $0.trailing.equalToSuperview().inset(10)
-            $0.centerY.equalTo(nameLabel)
-        }
+//        nameLabel.snp.makeConstraints {
+//            $0.top.equalToSuperview().inset(6)
+//            $0.centerX.equalToSuperview()
+//        }
+//        
+//        resetButton.snp.makeConstraints {
+//            $0.trailing.equalToSuperview().inset(10)
+//            $0.centerY.equalTo(nameLabel)
+//        }
         
         notAttemptedLabel.snp.makeConstraints {
             $0.center.equalToSuperview()
@@ -135,12 +159,12 @@ class LocalRecordsViewCell: UITableViewCell {
         stack.spacing = 8
         let titleLabel = UILabel()
         titleLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
-        titleLabel.font = UIFont.systemFont(ofSize: 20, weight: .regular)
+        titleLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         titleLabel.text = title
-        titleLabel.textColor = fontColor
+        titleLabel.textColor = .fontGrayLight
         stack.addArrangedSubview(titleLabel)
-        label.font = UIFont.systemFont(ofSize: 28, weight: .semibold)
-        label.textColor = fontColor
+        label.font = UIFont.systemFont(ofSize: 22, weight: .semibold)
+        label.textColor = .fontWhite
         stack.addArrangedSubview(label)
         return stack
     }

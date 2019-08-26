@@ -21,7 +21,7 @@ class LocalRecordsView: UIView {
         let bar = UINavigationBar()
         bar.barTintColor = .white
         bar.isTranslucent = false
-        bar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        bar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.fontBlack]
         let navItem = UINavigationItem(title: "Personal Records")
         navItem.setLeftBarButton(backItem, animated: false)
         bar.setItems([navItem], animated: false)
@@ -33,7 +33,7 @@ class LocalRecordsView: UIView {
                                        style: .done,
                                        target: nil,
                                        action: nil)
-        backItem.tintColor = .black
+        backItem.tintColor = .fontBlack
         return backItem
     }()
     
