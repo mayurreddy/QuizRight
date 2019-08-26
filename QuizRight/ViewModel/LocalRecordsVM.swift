@@ -21,19 +21,40 @@ class LocalRecordsVM {
                 let id = stage.id
                 let name = stage.name
                 let record: StageRecord
+                
                 if let attemptedStage = stageStore.getStageMO(id: id) {
                     record = StageRecord(
+                        id: id,
                         name: name,
                         didAttempt: true,
-                        personalBest: attemptedStage.bestTime,
+                        personalBest: stageStore.getPersonalBestForStage(id: id),
                         totalAttempts: Int(attemptedStage.attempts),
                         totalSuccesses: attemptedStage.allSuccessfulTimes.count,
-                        averageSuccessTime: stageStore.getAverageTimeForStage(id: id)
-                    )
+                        averageSuccessTime: stageStore.getAverageTimeForStage(id: id))
                 } else {
-                    record = StageRecord(name: name, didAttempt: false, personalBest: nil, totalAttempts: 0, totalSuccesses: 0, averageSuccessTime: nil)
+                    record = StageRecord(
+                        id: id,
+                        name: name,
+                        didAttempt: false,
+                        personalBest: nil,
+                        totalAttempts: 0,
+                        totalSuccesses: 0,
+                        averageSuccessTime: nil)
                 }
+                
                 return record
+            }
+            .sorted { first, second -> Bool in
+                if let firstPB = first.personalBest, let secondPB = second.personalBest {
+                    return firstPB < secondPB
+                } else if first.personalBest != nil {
+                    return true
+                } else if second.personalBest != nil {
+                    return false
+                } else if first.didAttempt {
+                    return true
+                }
+                return false
             }
         
         allRecords.accept(records)

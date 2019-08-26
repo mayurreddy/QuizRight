@@ -25,20 +25,10 @@ class ViewController: UIViewController {
         stack.spacing = 16
         
         let levelsButton = createButton()
-        levelsButton.setTitle("Levels", for: .normal)
+        levelsButton.setTitle("Play", for: .normal)
         
         levelsButton.rx.tap.subscribe(onNext: {
             let vc = StageListVC()
-            self.present(vc, animated: true)
-        }).disposed(by: bag)
-        
-        let continueButton = createButton()
-        continueButton.setTitle("Continue", for: .normal)
-        
-        continueButton.rx.tap.subscribe(onNext: {
-            let firstStage = StageOne()
-            let vm = StageVM(stage: firstStage)
-            let vc = StageVC(viewModel: vm)
             self.present(vc, animated: true)
         }).disposed(by: bag)
         
@@ -51,7 +41,6 @@ class ViewController: UIViewController {
         }).disposed(by: bag)
         
         stack.addArrangedSubview(levelsButton)
-        stack.addArrangedSubview(continueButton)
         stack.addArrangedSubview(recordsButton)
         
         view.addSubview(stack)
@@ -64,7 +53,7 @@ class ViewController: UIViewController {
     
     private func createButton() -> UIButton {
         let button = UIButton()
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 26, weight: .semibold)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 26, weight: .regular)
         button.backgroundColor = .primaryOrange
         button.snp.makeConstraints {
             $0.width.equalTo(280)

@@ -22,6 +22,11 @@ class LocalRecordsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        contentView.backItem.rx.tap.subscribe(onNext: {
+            self.dismiss(animated: true)
+        }).disposed(by: bag)
+        
+        contentView.table.rx.setDelegate(self).disposed(by: bag)
         bindToViewModel()
         viewModel.refresh()
     }
@@ -31,8 +36,36 @@ class LocalRecordsVC: UIViewController {
             .bind(to: contentView.table.rx.items(
                 cellIdentifier: LocalRecordsViewCell.identifier,
                 cellType: LocalRecordsViewCell.self
-            )) { row, record, cell in
-                print("Iam being binded")
+            )) { _, record, cell in
+                
+                cell.nameLabel.text = record.name
+                cell.setLabelDisplay(stageNotAttempted: !record.didAttempt)
+                guard record.didAttempt else {
+                    return
+                }
+
+                self.configure(cell, from: record)
             }.disposed(by: bag)
+    }
+    
+    private func configure(_ cell: LocalRecordsViewCell, from record: StageRecord) {
+        cell.attemptsLabel.text = "\(record.totalAttempts)"
+        cell.bestLabel.text = record.personalBest == nil ? "--.-" : "\(record.personalBest!)s"
+        cell.averageTimeLabel.text = record.averageSuccessTime == nil ? "--.-" : "\(record.averageSuccessTime!)s"
+        var successRate = record.successRate
+        successRate = Double(round(successRate * 1000) / 10)
+        cell.successRateLabel.text = "\(successRate)%"
+        
+        cell.resetButton.rx.tap.subscribe(onNext: {
+            stageStore.resetStage(id: record.id)
+            self.viewModel.refresh()
+            self.contentView.table.reloadData()
+        }).disposed(by: bag)
+    }
+}
+
+extension LocalRecordsVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 240
     }
 }

@@ -8,17 +8,8 @@
 
 import Foundation
 
-protocol StageRecordable {
-    var name: String { get }
-    var didAttempt: Bool { get }
-    var personalBest: Double { get }
-    var totalAttempts: Int { get }
-    var successRate: Double { get }
-    var failureRate: Double { get }
-    var averageSuccessTime: Double { get }
-}
-
 struct StageRecord {
+    let id: Int
     let name: String
     let didAttempt: Bool
     let personalBest: Double?
@@ -27,10 +18,6 @@ struct StageRecord {
     
     var successRate: Double {
         return Double(totalSuccesses) / Double(totalAttempts)
-    }
-    
-    var failureRate: Double {
-        return 100.0 - successRate
     }
     
     let averageSuccessTime: Double?

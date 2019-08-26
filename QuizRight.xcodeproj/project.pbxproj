@@ -15,6 +15,7 @@
 		7701AF9E230EEA4400A20F88 /* LocalRecordsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AF9D230EEA4400A20F88 /* LocalRecordsVM.swift */; };
 		7701AFA0230EEC9400A20F88 /* LocalRecordsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AF9F230EEC9400A20F88 /* LocalRecordsViewCell.swift */; };
 		7701AFA2230EF60400A20F88 /* StageRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AFA1230EF60400A20F88 /* StageRecord.swift */; };
+		7701AFA4230FEA9300A20F88 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AFA3230FEA9300A20F88 /* GradientView.swift */; };
 		7727916B2305A3CF0035302E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727916A2305A3CF0035302E /* DataController.swift */; };
 		7727916E2305A6FD0035302E /* StageMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727916C2305A6FD0035302E /* StageMO+CoreDataClass.swift */; };
 		7727916F2305A6FD0035302E /* StageMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727916D2305A6FD0035302E /* StageMO+CoreDataProperties.swift */; };
@@ -78,6 +79,7 @@
 		7701AF9D230EEA4400A20F88 /* LocalRecordsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRecordsVM.swift; sourceTree = "<group>"; };
 		7701AF9F230EEC9400A20F88 /* LocalRecordsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRecordsViewCell.swift; sourceTree = "<group>"; };
 		7701AFA1230EF60400A20F88 /* StageRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageRecord.swift; sourceTree = "<group>"; };
+		7701AFA3230FEA9300A20F88 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		7727916A2305A3CF0035302E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		7727916C2305A6FD0035302E /* StageMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StageMO+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7727916D2305A6FD0035302E /* StageMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StageMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				77279180230AE7F40035302E /* StageListViewCell.swift */,
 				7701AF9B230EEA2600A20F88 /* LocalRecordsView.swift */,
 				7701AF9F230EEC9400A20F88 /* LocalRecordsViewCell.swift */,
+				7701AFA3230FEA9300A20F88 /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				776DF810230302850054CB99 /* StageFour.swift in Sources */,
 				77279181230AE7F40035302E /* StageListViewCell.swift in Sources */,
 				7701AFA0230EEC9400A20F88 /* LocalRecordsViewCell.swift in Sources */,
+				7701AFA4230FEA9300A20F88 /* GradientView.swift in Sources */,
 				776DF80523017A960054CB99 /* StageVM.swift in Sources */,
 				776DF8072301881F0054CB99 /* StageTwo.swift in Sources */,
 			);

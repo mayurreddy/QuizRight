@@ -71,7 +71,7 @@ class StageStoreManager: StageStorable {
     }
     
     func getAverageTimeForStage(id: Int) -> Double? {
-        guard let stage = getStageMO(id: id) else {
+        guard let stage = getStageMO(id: id), stage.isCompleted else {
             return nil
         }
         
@@ -94,7 +94,7 @@ class StageStoreManager: StageStorable {
         do {
             let objects = try dataController.context.fetch(request)
             guard let stageToDelete = objects.first, objects.count == 1 else {
-                print("Exactly one stage not found")
+                print("Exactly one stage not found. Total found = \(objects.count)")
                 return
             }
             dataController.context.delete(stageToDelete)
