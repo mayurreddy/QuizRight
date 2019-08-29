@@ -49,6 +49,10 @@
 		7774BA9322FC46C200A6DA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7774BA9122FC46C200A6DA87 /* LaunchScreen.storyboard */; };
 		7774BA9E22FC46C200A6DA87 /* QuizRightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774BA9D22FC46C200A6DA87 /* QuizRightTests.swift */; };
 		7774BAA922FC46C200A6DA87 /* QuizRightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774BAA822FC46C200A6DA87 /* QuizRightUITests.swift */; };
+		77C2CBD62317CF06001B6CCD /* MultiplesOfSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CBD52317CF06001B6CCD /* MultiplesOfSeven.swift */; };
+		77C2CBD82317D012001B6CCD /* MultiplesOfSevenPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CBD72317D012001B6CCD /* MultiplesOfSevenPartTwo.swift */; };
+		77C2CBDA2317D064001B6CCD /* MultiplesOfEleven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CBD92317D064001B6CCD /* MultiplesOfEleven.swift */; };
+		77C2CBDC2317D0AF001B6CCD /* MultiplesOfElevenPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CBDB2317D0AF001B6CCD /* MultiplesOfElevenPartTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +90,7 @@
 		772791722307F7030035302E /* StageStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageStorable.swift; sourceTree = "<group>"; };
 		772791742307FC7F0035302E /* StageStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageStoreManager.swift; sourceTree = "<group>"; };
 		77279178230A7EE90035302E /* StageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageView.swift; sourceTree = "<group>"; };
-		7727917A230A93900035302E /* StageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageGenerator.swift; sourceTree = "<group>"; };
+		7727917A230A93900035302E /* StageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StageGenerator.swift; path = ../Controller/StageGenerator.swift; sourceTree = "<group>"; };
 		7727917C230ACCDD0035302E /* StageFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageFive.swift; sourceTree = "<group>"; };
 		7727917E230ACE6B0035302E /* StageSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageSix.swift; sourceTree = "<group>"; };
 		77279180230AE7F40035302E /* StageListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageListViewCell.swift; sourceTree = "<group>"; };
@@ -119,6 +123,10 @@
 		7774BAA422FC46C200A6DA87 /* QuizRightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizRightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7774BAA822FC46C200A6DA87 /* QuizRightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizRightUITests.swift; sourceTree = "<group>"; };
 		7774BAAA22FC46C200A6DA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77C2CBD52317CF06001B6CCD /* MultiplesOfSeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplesOfSeven.swift; sourceTree = "<group>"; };
+		77C2CBD72317D012001B6CCD /* MultiplesOfSevenPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplesOfSevenPartTwo.swift; sourceTree = "<group>"; };
+		77C2CBD92317D064001B6CCD /* MultiplesOfEleven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplesOfEleven.swift; sourceTree = "<group>"; };
+		77C2CBDB2317D0AF001B6CCD /* MultiplesOfElevenPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplesOfElevenPartTwo.swift; sourceTree = "<group>"; };
 		E7717CA7688AE0F6E238B1DA /* Pods-QuizRight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizRight.debug.xcconfig"; path = "Target Support Files/Pods-QuizRight/Pods-QuizRight.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,6 +192,10 @@
 				77279184230BD1050035302E /* StageEight.swift */,
 				77279186230BD2BE0035302E /* StageNine.swift */,
 				77279188230BD3C90035302E /* StageTen.swift */,
+				77C2CBD52317CF06001B6CCD /* MultiplesOfSeven.swift */,
+				77C2CBD72317D012001B6CCD /* MultiplesOfSevenPartTwo.swift */,
+				77C2CBD92317D064001B6CCD /* MultiplesOfEleven.swift */,
+				77C2CBDB2317D0AF001B6CCD /* MultiplesOfElevenPartTwo.swift */,
 			);
 			path = Stages;
 			sourceTree = "<group>";
@@ -195,6 +207,7 @@
 				7727918A230E7C660035302E /* Stages */,
 				776DF7F7230149780054CB99 /* Stageable.swift */,
 				7701AFA1230EF60400A20F88 /* StageRecord.swift */,
+				7727917A230A93900035302E /* StageGenerator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,7 +217,6 @@
 			children = (
 				776DF7FA23014D300054CB99 /* StageVC.swift */,
 				776DF7FC230151270054CB99 /* StageListVC.swift */,
-				7727917A230A93900035302E /* StageGenerator.swift */,
 				7774BA8A22FC46C000A6DA87 /* ViewController.swift */,
 				7701AF99230EE9F300A20F88 /* LocalRecordsVC.swift */,
 			);
@@ -478,6 +490,7 @@
 			files = (
 				7727917B230A93900035302E /* StageGenerator.swift in Sources */,
 				776DF800230168AC0054CB99 /* StageCell.swift in Sources */,
+				77C2CBD62317CF06001B6CCD /* MultiplesOfSeven.swift in Sources */,
 				77279185230BD1050035302E /* StageEight.swift in Sources */,
 				776DF80923018C430054CB99 /* StageListVM.swift in Sources */,
 				7727917F230ACE6B0035302E /* StageSix.swift in Sources */,
@@ -492,6 +505,7 @@
 				772791732307F7030035302E /* StageStorable.swift in Sources */,
 				7774BA8B22FC46C000A6DA87 /* ViewController.swift in Sources */,
 				7701AF9E230EEA4400A20F88 /* LocalRecordsVM.swift in Sources */,
+				77C2CBDC2317D0AF001B6CCD /* MultiplesOfElevenPartTwo.swift in Sources */,
 				7727917D230ACCDD0035302E /* StageFive.swift in Sources */,
 				7774BA8922FC46C000A6DA87 /* AppDelegate.swift in Sources */,
 				77279187230BD2BE0035302E /* StageNine.swift in Sources */,
@@ -500,6 +514,7 @@
 				7727916F2305A6FD0035302E /* StageMO+CoreDataProperties.swift in Sources */,
 				772791752307FC7F0035302E /* StageStoreManager.swift in Sources */,
 				7701AFA2230EF60400A20F88 /* StageRecord.swift in Sources */,
+				77C2CBDA2317D064001B6CCD /* MultiplesOfEleven.swift in Sources */,
 				774AD3E823059ED4005BA844 /* QuizRight.xcdatamodeld in Sources */,
 				7727916E2305A6FD0035302E /* StageMO+CoreDataClass.swift in Sources */,
 				77279183230BD0750035302E /* StageSeven.swift in Sources */,
@@ -508,6 +523,7 @@
 				776DF810230302850054CB99 /* StageFour.swift in Sources */,
 				77279181230AE7F40035302E /* StageListViewCell.swift in Sources */,
 				7701AFA0230EEC9400A20F88 /* LocalRecordsViewCell.swift in Sources */,
+				77C2CBD82317D012001B6CCD /* MultiplesOfSevenPartTwo.swift in Sources */,
 				7701AFA4230FEA9300A20F88 /* GradientView.swift in Sources */,
 				776DF80523017A960054CB99 /* StageVM.swift in Sources */,
 				776DF8072301881F0054CB99 /* StageTwo.swift in Sources */,

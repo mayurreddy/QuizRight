@@ -209,17 +209,30 @@ class StageView: UIView {
         
         switch (horizontal, vertical) {
         case (.regular, .regular):
-            let width = superview.bounds.width / 2.0
+            let halfWidth = superview.bounds.width / 2.0
+            let halfHeight = superview.bounds.height / 2.0
+            let collectionViewDim = min(halfWidth, halfHeight)
             collectionView.snp.remakeConstraints {
-                $0.bottom.equalToSuperview()
-                $0.width.equalTo(width)
-                $0.height.equalTo(width)
+                $0.bottom.equalToSuperview().inset(30)
+                $0.width.height.equalTo(collectionViewDim)
+                $0.centerX.equalToSuperview()
+            }
+            
+            stageNameLabel.snp.remakeConstraints {
+                $0.top.equalTo(superview.safeAreaLayoutGuide.snp.top).inset(25)
+                $0.leading.trailing.equalToSuperview()
+                $0.height.equalTo(50)
             }
             
             stageDescriptionLabel.snp.remakeConstraints {
                 $0.top.equalTo(stageNameLabel.snp.bottom)
-                $0.bottom.equalTo(collectionView.snp.top)
                 $0.leading.trailing.equalToSuperview()
+            }
+            
+            timeStack.axis = .horizontal
+            timeStack.snp.remakeConstraints {
+                $0.bottom.equalTo(collectionView.snp.top).inset(-30)
+                $0.centerX.equalToSuperview()
             }
             
         case (.compact, .regular):
