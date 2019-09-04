@@ -16,6 +16,7 @@ class StageVM {
     let id: Int
     private let name: String
     private let description: String
+    private let details: String
     private let totalCount: Int
     private let correctCount: Int
     private let correctAnswers: [Int]
@@ -32,6 +33,7 @@ class StageVM {
         self.id = stage.id
         self.name = stage.name
         self.description = stage.description
+        self.details = stage.details
         self.totalCount = stage.totalCount
         self.correctCount = stage.correctCount
         self.correctAnswers = stage.correctAnswers
@@ -51,6 +53,10 @@ class StageVM {
     
     func getStageDescription() -> String {
         return description
+    }
+    
+    func getStageDetails() -> String {
+        return details
     }
     
     func getPersonalBest() -> Double? {

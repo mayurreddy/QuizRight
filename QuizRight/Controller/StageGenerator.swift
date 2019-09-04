@@ -23,7 +23,9 @@ struct StageGenerator {
         MultiplesOfSeven(),
         MultiplesOfSevenPartTwo(),
         MultiplesOfEleven(),
-        MultiplesOfElevenPartTwo()
+        MultiplesOfElevenPartTwo(),
+        Addition(),
+        AdditionPartTwo()
     ]
     
     static func getStage(index: Int) -> Stageable {

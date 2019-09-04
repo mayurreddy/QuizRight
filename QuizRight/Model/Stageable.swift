@@ -12,8 +12,15 @@ protocol Stageable {
     var id: Int { get }
     var name: String { get }
     var description: String { get }
+    var details: String { mutating get }
     var totalCount: Int { get }
     var correctCount: Int { get }
     var correctAnswers: [Int] { mutating get }
     var wrongAnswers: [Int] { mutating get }
+}
+
+extension Stageable {
+    var details: String {
+        return description
+    }
 }

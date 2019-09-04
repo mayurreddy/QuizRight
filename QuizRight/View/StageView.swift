@@ -19,6 +19,7 @@ class StageView: UIView {
         view.register(StageCell.self, forCellWithReuseIdentifier: StageCell.identifier)
         view.backgroundColor = .white
         view.isHidden = true
+        view.isScrollEnabled = false
         return view
     }()
     

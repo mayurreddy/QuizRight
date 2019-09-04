@@ -50,6 +50,8 @@ class StageVC: UIViewController {
             self.contentView.startButton.isHidden = true
             self.contentView.stageNameLabel.isHidden = true
             self.contentView.collectionView.isHidden = false
+            self.contentView.stageDescriptionLabel.text =
+                self.viewModel.getStageDetails()
             self.viewModel.startCounter()
         }).disposed(by: bag)
         
