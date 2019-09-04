@@ -55,6 +55,8 @@
 		77C2CBDC2317D0AF001B6CCD /* MultiplesOfElevenPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CBDB2317D0AF001B6CCD /* MultiplesOfElevenPartTwo.swift */; };
 		77C2CBDE231FB7D3001B6CCD /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CBDD231FB7D3001B6CCD /* Addition.swift */; };
 		77C2CBE0231FC580001B6CCD /* AdditionPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CBDF231FC580001B6CCD /* AdditionPartTwo.swift */; };
+		77C2CBE2231FC7DC001B6CCD /* Subtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CBE1231FC7DC001B6CCD /* Subtraction.swift */; };
+		77C2CBE4231FC9A1001B6CCD /* SubtractionPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CBE3231FC9A1001B6CCD /* SubtractionPartTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,8 @@
 		77C2CBDB2317D0AF001B6CCD /* MultiplesOfElevenPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplesOfElevenPartTwo.swift; sourceTree = "<group>"; };
 		77C2CBDD231FB7D3001B6CCD /* Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addition.swift; sourceTree = "<group>"; };
 		77C2CBDF231FC580001B6CCD /* AdditionPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionPartTwo.swift; sourceTree = "<group>"; };
+		77C2CBE1231FC7DC001B6CCD /* Subtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtraction.swift; sourceTree = "<group>"; };
+		77C2CBE3231FC9A1001B6CCD /* SubtractionPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionPartTwo.swift; sourceTree = "<group>"; };
 		E7717CA7688AE0F6E238B1DA /* Pods-QuizRight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizRight.debug.xcconfig"; path = "Target Support Files/Pods-QuizRight/Pods-QuizRight.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,6 +206,8 @@
 				77C2CBDB2317D0AF001B6CCD /* MultiplesOfElevenPartTwo.swift */,
 				77C2CBDD231FB7D3001B6CCD /* Addition.swift */,
 				77C2CBDF231FC580001B6CCD /* AdditionPartTwo.swift */,
+				77C2CBE1231FC7DC001B6CCD /* Subtraction.swift */,
+				77C2CBE3231FC9A1001B6CCD /* SubtractionPartTwo.swift */,
 			);
 			path = Stages;
 			sourceTree = "<group>";
@@ -506,6 +512,7 @@
 				7701AF9A230EE9F300A20F88 /* LocalRecordsVC.swift in Sources */,
 				776DF7FB23014D300054CB99 /* StageVC.swift in Sources */,
 				77279189230BD3C90035302E /* StageTen.swift in Sources */,
+				77C2CBE4231FC9A1001B6CCD /* SubtractionPartTwo.swift in Sources */,
 				77279179230A7EE90035302E /* StageView.swift in Sources */,
 				776DF7FD230151270054CB99 /* StageListVC.swift in Sources */,
 				772791732307F7030035302E /* StageStorable.swift in Sources */,
@@ -522,6 +529,7 @@
 				772791752307FC7F0035302E /* StageStoreManager.swift in Sources */,
 				7701AFA2230EF60400A20F88 /* StageRecord.swift in Sources */,
 				77C2CBDA2317D064001B6CCD /* MultiplesOfEleven.swift in Sources */,
+				77C2CBE2231FC7DC001B6CCD /* Subtraction.swift in Sources */,
 				774AD3E823059ED4005BA844 /* QuizRight.xcdatamodeld in Sources */,
 				7727916E2305A6FD0035302E /* StageMO+CoreDataClass.swift in Sources */,
 				77C2CBDE231FB7D3001B6CCD /* Addition.swift in Sources */,
