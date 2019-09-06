@@ -192,6 +192,7 @@ class StageView: UIView {
         backButton.snp.makeConstraints {
             $0.top.equalTo(superview.safeAreaLayoutGuide.snp.top).inset(10)
             $0.leading.equalToSuperview().inset(20)
+            $0.height.equalTo(30)
         }
         
         startButton.snp.makeConstraints {
@@ -228,6 +229,7 @@ class StageView: UIView {
             stageDescriptionLabel.snp.remakeConstraints {
                 $0.top.equalTo(stageNameLabel.snp.bottom)
                 $0.leading.trailing.equalToSuperview()
+                $0.bottom.equalTo(timeStack.snp.top)
             }
             
             timeStack.axis = .horizontal
@@ -253,6 +255,7 @@ class StageView: UIView {
             stageDescriptionLabel.snp.remakeConstraints {
                 $0.top.equalTo(stageNameLabel.snp.bottom)
                 $0.leading.trailing.equalToSuperview()
+                $0.bottom.equalTo(timeStack.snp.top)
             }
             
             timeStack.axis = .horizontal
@@ -278,7 +281,7 @@ class StageView: UIView {
             stageDescriptionLabel.snp.remakeConstraints {
                 $0.top.equalTo(backButton.snp.bottom)
                 $0.leading.equalToSuperview().inset(20)
-                $0.trailing.equalTo(collectionView.snp.leading).inset(20)
+                $0.trailing.equalTo(collectionView.snp.leading).inset(-20)
                 $0.bottom.equalToSuperview()
             }
             
@@ -289,13 +292,7 @@ class StageView: UIView {
             }
             
         default:
-            let size = superview.bounds
-            let dim = min(size.width, size.height)
-            collectionView.snp.remakeConstraints {
-                $0.center.equalToSuperview()
-                $0.width.equalTo(dim)
-                $0.height.equalTo(collectionView.snp.width)
-            }
+            print("Bug")
         }
     }
 }
