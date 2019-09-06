@@ -14,7 +14,6 @@ import RxCocoa
 class ViewController: UIViewController {
     
     private let bag = DisposeBag()
-    private let viewModel = HomeScreenVM()
     
     override func loadView() {
         let view = UIView()

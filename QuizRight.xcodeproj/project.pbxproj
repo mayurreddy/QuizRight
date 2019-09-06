@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3218E6310DB8C8A1327B0D9E /* libPods-QuizRight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD551C66DEC73B1C24246A8 /* libPods-QuizRight.a */; };
 		7701AF96230E844C00A20F88 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7701AF95230E844C00A20F88 /* GameKit.framework */; };
-		7701AF98230ED50E00A20F88 /* HomeScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AF97230ED50E00A20F88 /* HomeScreenVM.swift */; };
 		7701AF9A230EE9F300A20F88 /* LocalRecordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AF99230EE9F300A20F88 /* LocalRecordsVC.swift */; };
 		7701AF9C230EEA2600A20F88 /* LocalRecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AF9B230EEA2600A20F88 /* LocalRecordsView.swift */; };
 		7701AF9E230EEA4400A20F88 /* LocalRecordsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AF9D230EEA4400A20F88 /* LocalRecordsVM.swift */; };
@@ -81,7 +80,6 @@
 		6F5F75E40EE8482EC53662B6 /* Pods-QuizRight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizRight.release.xcconfig"; path = "Target Support Files/Pods-QuizRight/Pods-QuizRight.release.xcconfig"; sourceTree = "<group>"; };
 		7701AF92230E81E700A20F88 /* QuizRight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuizRight.entitlements; sourceTree = "<group>"; };
 		7701AF95230E844C00A20F88 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
-		7701AF97230ED50E00A20F88 /* HomeScreenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVM.swift; sourceTree = "<group>"; };
 		7701AF99230EE9F300A20F88 /* LocalRecordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRecordsVC.swift; sourceTree = "<group>"; };
 		7701AF9B230EEA2600A20F88 /* LocalRecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRecordsView.swift; sourceTree = "<group>"; };
 		7701AF9D230EEA4400A20F88 /* LocalRecordsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRecordsVM.swift; sourceTree = "<group>"; };
@@ -253,7 +251,6 @@
 			children = (
 				776DF80423017A960054CB99 /* StageVM.swift */,
 				776DF80823018C430054CB99 /* StageListVM.swift */,
-				7701AF97230ED50E00A20F88 /* HomeScreenVM.swift */,
 				7701AF9D230EEA4400A20F88 /* LocalRecordsVM.swift */,
 			);
 			path = ViewModel;
@@ -523,7 +520,6 @@
 				7727917D230ACCDD0035302E /* StageFive.swift in Sources */,
 				7774BA8922FC46C000A6DA87 /* AppDelegate.swift in Sources */,
 				77279187230BD2BE0035302E /* StageNine.swift in Sources */,
-				7701AF98230ED50E00A20F88 /* HomeScreenVM.swift in Sources */,
 				776DF80B2301B8AF0054CB99 /* StageThree.swift in Sources */,
 				7727916F2305A6FD0035302E /* StageMO+CoreDataProperties.swift in Sources */,
 				772791752307FC7F0035302E /* StageStoreManager.swift in Sources */,
