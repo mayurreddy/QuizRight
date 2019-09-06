@@ -1,5 +1,5 @@
 //
-//  StageTwo.swift
+//  Odds.swift
 //  QuizRight
 //
 //  Created by Mayur on 8/12/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct StageTwo: Stageable {
+struct Odds: Stageable {
     let id = 2
     let name = "Odds"
     let description = "Select all odd numbers"

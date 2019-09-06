@@ -1,5 +1,5 @@
 //
-//  StageNine.swift
+//  PerfectSquares.swift
 //  QuizRight
 //
 //  Created by Mayur on 8/20/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct StageNine: Stageable {
+struct PerfectSquares: Stageable {
     let id = 9
     let name = "Perfect Squares"
     let description = "Select all perfect squares"

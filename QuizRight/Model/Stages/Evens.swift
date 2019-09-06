@@ -1,5 +1,5 @@
 //
-//  StageOne.swift
+//  Evens.swift
 //  QuizRight
 //
 //  Created by Mayur on 8/12/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct StageOne: Stageable {
+struct Evens: Stageable {
     let id = 1
     let name = "Evens"
     let description = "Select all even numbers"

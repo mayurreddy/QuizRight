@@ -1,5 +1,5 @@
 //
-//  StageEight.swift
+//  MultiplesOfFourPartTwo.swift
 //  QuizRight
 //
 //  Created by Mayur on 8/20/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct StageEight: Stageable {
+struct MultiplesOfFourPartTwo: Stageable {
     let id = 8
     let name = "Multiples of 4 - II"
     let description = "Select all multiples of 4"

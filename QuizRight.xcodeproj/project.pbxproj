@@ -22,25 +22,25 @@
 		772791752307FC7F0035302E /* StageStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772791742307FC7F0035302E /* StageStoreManager.swift */; };
 		77279179230A7EE90035302E /* StageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279178230A7EE90035302E /* StageView.swift */; };
 		7727917B230A93900035302E /* StageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727917A230A93900035302E /* StageGenerator.swift */; };
-		7727917D230ACCDD0035302E /* StageFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727917C230ACCDD0035302E /* StageFive.swift */; };
-		7727917F230ACE6B0035302E /* StageSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727917E230ACE6B0035302E /* StageSix.swift */; };
+		7727917D230ACCDD0035302E /* MultiplesOfThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727917C230ACCDD0035302E /* MultiplesOfThree.swift */; };
+		7727917F230ACE6B0035302E /* MultiplesOfThreePartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727917E230ACE6B0035302E /* MultiplesOfThreePartTwo.swift */; };
 		77279181230AE7F40035302E /* StageListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279180230AE7F40035302E /* StageListViewCell.swift */; };
-		77279183230BD0750035302E /* StageSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279182230BD0750035302E /* StageSeven.swift */; };
-		77279185230BD1050035302E /* StageEight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279184230BD1050035302E /* StageEight.swift */; };
-		77279187230BD2BE0035302E /* StageNine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279186230BD2BE0035302E /* StageNine.swift */; };
-		77279189230BD3C90035302E /* StageTen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279188230BD3C90035302E /* StageTen.swift */; };
+		77279183230BD0750035302E /* MultiplesOfFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279182230BD0750035302E /* MultiplesOfFour.swift */; };
+		77279185230BD1050035302E /* MultiplesOfFourPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279184230BD1050035302E /* MultiplesOfFourPartTwo.swift */; };
+		77279187230BD2BE0035302E /* PerfectSquares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279186230BD2BE0035302E /* PerfectSquares.swift */; };
+		77279189230BD3C90035302E /* PerfectSquaresPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77279188230BD3C90035302E /* PerfectSquaresPartTwo.swift */; };
 		774AD3E823059ED4005BA844 /* QuizRight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 774AD3E623059ED4005BA844 /* QuizRight.xcdatamodeld */; };
 		776DF7F8230149780054CB99 /* Stageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7F7230149780054CB99 /* Stageable.swift */; };
 		776DF7FB23014D300054CB99 /* StageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7FA23014D300054CB99 /* StageVC.swift */; };
 		776DF7FD230151270054CB99 /* StageListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7FC230151270054CB99 /* StageListVC.swift */; };
 		776DF800230168AC0054CB99 /* StageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF7FF230168AC0054CB99 /* StageCell.swift */; };
-		776DF802230177200054CB99 /* StageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF801230177200054CB99 /* StageOne.swift */; };
+		776DF802230177200054CB99 /* Evens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF801230177200054CB99 /* Evens.swift */; };
 		776DF80523017A960054CB99 /* StageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF80423017A960054CB99 /* StageVM.swift */; };
-		776DF8072301881F0054CB99 /* StageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF8062301881F0054CB99 /* StageTwo.swift */; };
+		776DF8072301881F0054CB99 /* Odds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF8062301881F0054CB99 /* Odds.swift */; };
 		776DF80923018C430054CB99 /* StageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF80823018C430054CB99 /* StageListVM.swift */; };
-		776DF80B2301B8AF0054CB99 /* StageThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF80A2301B8AF0054CB99 /* StageThree.swift */; };
+		776DF80B2301B8AF0054CB99 /* OddsPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF80A2301B8AF0054CB99 /* OddsPartTwo.swift */; };
 		776DF80E2302BA4A0054CB99 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF80D2302BA4A0054CB99 /* UIColorExtensions.swift */; };
-		776DF810230302850054CB99 /* StageFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF80F230302850054CB99 /* StageFour.swift */; };
+		776DF810230302850054CB99 /* EvensPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DF80F230302850054CB99 /* EvensPartTwo.swift */; };
 		7774BA8922FC46C000A6DA87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774BA8822FC46C000A6DA87 /* AppDelegate.swift */; };
 		7774BA8B22FC46C000A6DA87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774BA8A22FC46C000A6DA87 /* ViewController.swift */; };
 		7774BA8E22FC46C000A6DA87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7774BA8C22FC46C000A6DA87 /* Main.storyboard */; };
@@ -93,25 +93,25 @@
 		772791742307FC7F0035302E /* StageStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageStoreManager.swift; sourceTree = "<group>"; };
 		77279178230A7EE90035302E /* StageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageView.swift; sourceTree = "<group>"; };
 		7727917A230A93900035302E /* StageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StageGenerator.swift; path = ../Controller/StageGenerator.swift; sourceTree = "<group>"; };
-		7727917C230ACCDD0035302E /* StageFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageFive.swift; sourceTree = "<group>"; };
-		7727917E230ACE6B0035302E /* StageSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageSix.swift; sourceTree = "<group>"; };
+		7727917C230ACCDD0035302E /* MultiplesOfThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplesOfThree.swift; sourceTree = "<group>"; };
+		7727917E230ACE6B0035302E /* MultiplesOfThreePartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplesOfThreePartTwo.swift; sourceTree = "<group>"; };
 		77279180230AE7F40035302E /* StageListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageListViewCell.swift; sourceTree = "<group>"; };
-		77279182230BD0750035302E /* StageSeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageSeven.swift; sourceTree = "<group>"; };
-		77279184230BD1050035302E /* StageEight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageEight.swift; sourceTree = "<group>"; };
-		77279186230BD2BE0035302E /* StageNine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageNine.swift; sourceTree = "<group>"; };
-		77279188230BD3C90035302E /* StageTen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageTen.swift; sourceTree = "<group>"; };
+		77279182230BD0750035302E /* MultiplesOfFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplesOfFour.swift; sourceTree = "<group>"; };
+		77279184230BD1050035302E /* MultiplesOfFourPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplesOfFourPartTwo.swift; sourceTree = "<group>"; };
+		77279186230BD2BE0035302E /* PerfectSquares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectSquares.swift; sourceTree = "<group>"; };
+		77279188230BD3C90035302E /* PerfectSquaresPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectSquaresPartTwo.swift; sourceTree = "<group>"; };
 		774AD3E723059ED4005BA844 /* QuizRight.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuizRight.xcdatamodel; sourceTree = "<group>"; };
 		776DF7F7230149780054CB99 /* Stageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stageable.swift; sourceTree = "<group>"; };
 		776DF7FA23014D300054CB99 /* StageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageVC.swift; sourceTree = "<group>"; };
 		776DF7FC230151270054CB99 /* StageListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageListVC.swift; sourceTree = "<group>"; };
 		776DF7FF230168AC0054CB99 /* StageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageCell.swift; sourceTree = "<group>"; };
-		776DF801230177200054CB99 /* StageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageOne.swift; sourceTree = "<group>"; };
+		776DF801230177200054CB99 /* Evens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evens.swift; sourceTree = "<group>"; };
 		776DF80423017A960054CB99 /* StageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageVM.swift; sourceTree = "<group>"; };
-		776DF8062301881F0054CB99 /* StageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageTwo.swift; sourceTree = "<group>"; };
+		776DF8062301881F0054CB99 /* Odds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Odds.swift; sourceTree = "<group>"; };
 		776DF80823018C430054CB99 /* StageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageListVM.swift; sourceTree = "<group>"; };
-		776DF80A2301B8AF0054CB99 /* StageThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageThree.swift; sourceTree = "<group>"; };
+		776DF80A2301B8AF0054CB99 /* OddsPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsPartTwo.swift; sourceTree = "<group>"; };
 		776DF80D2302BA4A0054CB99 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
-		776DF80F230302850054CB99 /* StageFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageFour.swift; sourceTree = "<group>"; };
+		776DF80F230302850054CB99 /* EvensPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvensPartTwo.swift; sourceTree = "<group>"; };
 		7774BA8522FC46C000A6DA87 /* QuizRight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizRight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7774BA8822FC46C000A6DA87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7774BA8A22FC46C000A6DA87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -188,16 +188,16 @@
 		7727918A230E7C660035302E /* Stages */ = {
 			isa = PBXGroup;
 			children = (
-				776DF801230177200054CB99 /* StageOne.swift */,
-				776DF8062301881F0054CB99 /* StageTwo.swift */,
-				776DF80A2301B8AF0054CB99 /* StageThree.swift */,
-				776DF80F230302850054CB99 /* StageFour.swift */,
-				7727917C230ACCDD0035302E /* StageFive.swift */,
-				7727917E230ACE6B0035302E /* StageSix.swift */,
-				77279182230BD0750035302E /* StageSeven.swift */,
-				77279184230BD1050035302E /* StageEight.swift */,
-				77279186230BD2BE0035302E /* StageNine.swift */,
-				77279188230BD3C90035302E /* StageTen.swift */,
+				776DF801230177200054CB99 /* Evens.swift */,
+				776DF8062301881F0054CB99 /* Odds.swift */,
+				776DF80A2301B8AF0054CB99 /* OddsPartTwo.swift */,
+				776DF80F230302850054CB99 /* EvensPartTwo.swift */,
+				7727917C230ACCDD0035302E /* MultiplesOfThree.swift */,
+				7727917E230ACE6B0035302E /* MultiplesOfThreePartTwo.swift */,
+				77279182230BD0750035302E /* MultiplesOfFour.swift */,
+				77279184230BD1050035302E /* MultiplesOfFourPartTwo.swift */,
+				77279186230BD2BE0035302E /* PerfectSquares.swift */,
+				77279188230BD3C90035302E /* PerfectSquaresPartTwo.swift */,
 				77C2CBD52317CF06001B6CCD /* MultiplesOfSeven.swift */,
 				77C2CBD72317D012001B6CCD /* MultiplesOfSevenPartTwo.swift */,
 				77C2CBD92317D064001B6CCD /* MultiplesOfEleven.swift */,
@@ -500,15 +500,15 @@
 				7727917B230A93900035302E /* StageGenerator.swift in Sources */,
 				776DF800230168AC0054CB99 /* StageCell.swift in Sources */,
 				77C2CBD62317CF06001B6CCD /* MultiplesOfSeven.swift in Sources */,
-				77279185230BD1050035302E /* StageEight.swift in Sources */,
+				77279185230BD1050035302E /* MultiplesOfFourPartTwo.swift in Sources */,
 				776DF80923018C430054CB99 /* StageListVM.swift in Sources */,
-				7727917F230ACE6B0035302E /* StageSix.swift in Sources */,
+				7727917F230ACE6B0035302E /* MultiplesOfThreePartTwo.swift in Sources */,
 				776DF7F8230149780054CB99 /* Stageable.swift in Sources */,
 				7701AF9C230EEA2600A20F88 /* LocalRecordsView.swift in Sources */,
 				776DF80E2302BA4A0054CB99 /* UIColorExtensions.swift in Sources */,
 				7701AF9A230EE9F300A20F88 /* LocalRecordsVC.swift in Sources */,
 				776DF7FB23014D300054CB99 /* StageVC.swift in Sources */,
-				77279189230BD3C90035302E /* StageTen.swift in Sources */,
+				77279189230BD3C90035302E /* PerfectSquaresPartTwo.swift in Sources */,
 				77C2CBE4231FC9A1001B6CCD /* SubtractionPartTwo.swift in Sources */,
 				77279179230A7EE90035302E /* StageView.swift in Sources */,
 				776DF7FD230151270054CB99 /* StageListVC.swift in Sources */,
@@ -517,10 +517,10 @@
 				7701AF9E230EEA4400A20F88 /* LocalRecordsVM.swift in Sources */,
 				77C2CBE0231FC580001B6CCD /* AdditionPartTwo.swift in Sources */,
 				77C2CBDC2317D0AF001B6CCD /* MultiplesOfElevenPartTwo.swift in Sources */,
-				7727917D230ACCDD0035302E /* StageFive.swift in Sources */,
+				7727917D230ACCDD0035302E /* MultiplesOfThree.swift in Sources */,
 				7774BA8922FC46C000A6DA87 /* AppDelegate.swift in Sources */,
-				77279187230BD2BE0035302E /* StageNine.swift in Sources */,
-				776DF80B2301B8AF0054CB99 /* StageThree.swift in Sources */,
+				77279187230BD2BE0035302E /* PerfectSquares.swift in Sources */,
+				776DF80B2301B8AF0054CB99 /* OddsPartTwo.swift in Sources */,
 				7727916F2305A6FD0035302E /* StageMO+CoreDataProperties.swift in Sources */,
 				772791752307FC7F0035302E /* StageStoreManager.swift in Sources */,
 				7701AFA2230EF60400A20F88 /* StageRecord.swift in Sources */,
@@ -529,16 +529,16 @@
 				774AD3E823059ED4005BA844 /* QuizRight.xcdatamodeld in Sources */,
 				7727916E2305A6FD0035302E /* StageMO+CoreDataClass.swift in Sources */,
 				77C2CBDE231FB7D3001B6CCD /* Addition.swift in Sources */,
-				77279183230BD0750035302E /* StageSeven.swift in Sources */,
+				77279183230BD0750035302E /* MultiplesOfFour.swift in Sources */,
 				7727916B2305A3CF0035302E /* DataController.swift in Sources */,
-				776DF802230177200054CB99 /* StageOne.swift in Sources */,
-				776DF810230302850054CB99 /* StageFour.swift in Sources */,
+				776DF802230177200054CB99 /* Evens.swift in Sources */,
+				776DF810230302850054CB99 /* EvensPartTwo.swift in Sources */,
 				77279181230AE7F40035302E /* StageListViewCell.swift in Sources */,
 				7701AFA0230EEC9400A20F88 /* LocalRecordsViewCell.swift in Sources */,
 				77C2CBD82317D012001B6CCD /* MultiplesOfSevenPartTwo.swift in Sources */,
 				7701AFA4230FEA9300A20F88 /* GradientView.swift in Sources */,
 				776DF80523017A960054CB99 /* StageVM.swift in Sources */,
-				776DF8072301881F0054CB99 /* StageTwo.swift in Sources */,
+				776DF8072301881F0054CB99 /* Odds.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

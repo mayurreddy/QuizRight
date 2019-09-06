@@ -1,5 +1,5 @@
 //
-//  StageSix.swift
+//  MultiplesOfThreePartTwo.swift
 //  QuizRight
 //
 //  Created by Mayur on 8/19/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct StageSix: Stageable {
+struct MultiplesOfThreePartTwo: Stageable {
     let id = 6
     let name = "Multiples of 3 - II"
     let description = "Select all multiples of 3"
