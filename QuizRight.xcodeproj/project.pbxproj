@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3218E6310DB8C8A1327B0D9E /* libPods-QuizRight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD551C66DEC73B1C24246A8 /* libPods-QuizRight.a */; };
-		7701AF96230E844C00A20F88 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7701AF95230E844C00A20F88 /* GameKit.framework */; };
 		7701AF9A230EE9F300A20F88 /* LocalRecordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AF99230EE9F300A20F88 /* LocalRecordsVC.swift */; };
 		7701AF9C230EEA2600A20F88 /* LocalRecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AF9B230EEA2600A20F88 /* LocalRecordsView.swift */; };
 		7701AF9E230EEA4400A20F88 /* LocalRecordsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701AF9D230EEA4400A20F88 /* LocalRecordsVM.swift */; };
@@ -81,7 +80,6 @@
 		0CD551C66DEC73B1C24246A8 /* libPods-QuizRight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuizRight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5F75E40EE8482EC53662B6 /* Pods-QuizRight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizRight.release.xcconfig"; path = "Target Support Files/Pods-QuizRight/Pods-QuizRight.release.xcconfig"; sourceTree = "<group>"; };
 		7701AF92230E81E700A20F88 /* QuizRight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuizRight.entitlements; sourceTree = "<group>"; };
-		7701AF95230E844C00A20F88 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		7701AF99230EE9F300A20F88 /* LocalRecordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRecordsVC.swift; sourceTree = "<group>"; };
 		7701AF9B230EEA2600A20F88 /* LocalRecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRecordsView.swift; sourceTree = "<group>"; };
 		7701AF9D230EEA4400A20F88 /* LocalRecordsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRecordsVM.swift; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3218E6310DB8C8A1327B0D9E /* libPods-QuizRight.a in Frameworks */,
-				7701AF96230E844C00A20F88 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +167,6 @@
 		40FA1F3517E9F3B5C372480E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7701AF95230E844C00A20F88 /* GameKit.framework */,
 				0CD551C66DEC73B1C24246A8 /* libPods-QuizRight.a */,
 			);
 			name = Frameworks;
@@ -409,10 +405,10 @@
 						CreatedOnToolsVersion = 10.2.1;
 						SystemCapabilities = {
 							com.apple.GameCenter.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -722,7 +718,6 @@
 			baseConfigurationReference = E7717CA7688AE0F6E238B1DA /* Pods-QuizRight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = QuizRight/QuizRight.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69T99HQWYH;
@@ -745,7 +740,6 @@
 			baseConfigurationReference = 6F5F75E40EE8482EC53662B6 /* Pods-QuizRight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = QuizRight/QuizRight.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69T99HQWYH;
