@@ -28,6 +28,8 @@ struct StageGenerator {
         AdditionPartTwo(),
         Subtraction(),
         SubtractionPartTwo(),
+        Multiplication(),
+        MultiplicationPartTwo()
     ]
     
     static func getStage(index: Int) -> Stageable {

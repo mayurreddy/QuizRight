@@ -48,6 +48,8 @@
 		7774BA9322FC46C200A6DA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7774BA9122FC46C200A6DA87 /* LaunchScreen.storyboard */; };
 		7774BA9E22FC46C200A6DA87 /* QuizRightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774BA9D22FC46C200A6DA87 /* QuizRightTests.swift */; };
 		7774BAA922FC46C200A6DA87 /* QuizRightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774BAA822FC46C200A6DA87 /* QuizRightUITests.swift */; };
+		77832A722322609A00E1C2B9 /* Multiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77832A712322609900E1C2B9 /* Multiplication.swift */; };
+		77832A74232263A900E1C2B9 /* MultiplicationPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77832A73232263A900E1C2B9 /* MultiplicationPartTwo.swift */; };
 		77C2CBD62317CF06001B6CCD /* MultiplesOfSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CBD52317CF06001B6CCD /* MultiplesOfSeven.swift */; };
 		77C2CBD82317D012001B6CCD /* MultiplesOfSevenPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CBD72317D012001B6CCD /* MultiplesOfSevenPartTwo.swift */; };
 		77C2CBDA2317D064001B6CCD /* MultiplesOfEleven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CBD92317D064001B6CCD /* MultiplesOfEleven.swift */; };
@@ -125,6 +127,8 @@
 		7774BAA422FC46C200A6DA87 /* QuizRightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizRightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7774BAA822FC46C200A6DA87 /* QuizRightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizRightUITests.swift; sourceTree = "<group>"; };
 		7774BAAA22FC46C200A6DA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77832A712322609900E1C2B9 /* Multiplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiplication.swift; sourceTree = "<group>"; };
+		77832A73232263A900E1C2B9 /* MultiplicationPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationPartTwo.swift; sourceTree = "<group>"; };
 		77C2CBD52317CF06001B6CCD /* MultiplesOfSeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplesOfSeven.swift; sourceTree = "<group>"; };
 		77C2CBD72317D012001B6CCD /* MultiplesOfSevenPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplesOfSevenPartTwo.swift; sourceTree = "<group>"; };
 		77C2CBD92317D064001B6CCD /* MultiplesOfEleven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplesOfEleven.swift; sourceTree = "<group>"; };
@@ -206,6 +210,8 @@
 				77C2CBDF231FC580001B6CCD /* AdditionPartTwo.swift */,
 				77C2CBE1231FC7DC001B6CCD /* Subtraction.swift */,
 				77C2CBE3231FC9A1001B6CCD /* SubtractionPartTwo.swift */,
+				77832A712322609900E1C2B9 /* Multiplication.swift */,
+				77832A73232263A900E1C2B9 /* MultiplicationPartTwo.swift */,
 			);
 			path = Stages;
 			sourceTree = "<group>";
@@ -503,6 +509,7 @@
 				77279185230BD1050035302E /* MultiplesOfFourPartTwo.swift in Sources */,
 				776DF80923018C430054CB99 /* StageListVM.swift in Sources */,
 				7727917F230ACE6B0035302E /* MultiplesOfThreePartTwo.swift in Sources */,
+				77832A722322609A00E1C2B9 /* Multiplication.swift in Sources */,
 				776DF7F8230149780054CB99 /* Stageable.swift in Sources */,
 				7701AF9C230EEA2600A20F88 /* LocalRecordsView.swift in Sources */,
 				776DF80E2302BA4A0054CB99 /* UIColorExtensions.swift in Sources */,
@@ -521,6 +528,7 @@
 				7774BA8922FC46C000A6DA87 /* AppDelegate.swift in Sources */,
 				77279187230BD2BE0035302E /* PerfectSquares.swift in Sources */,
 				776DF80B2301B8AF0054CB99 /* OddsPartTwo.swift in Sources */,
+				77832A74232263A900E1C2B9 /* MultiplicationPartTwo.swift in Sources */,
 				7727916F2305A6FD0035302E /* StageMO+CoreDataProperties.swift in Sources */,
 				772791752307FC7F0035302E /* StageStoreManager.swift in Sources */,
 				7701AFA2230EF60400A20F88 /* StageRecord.swift in Sources */,
